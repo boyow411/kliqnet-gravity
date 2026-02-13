@@ -19,14 +19,14 @@ export function Navbar() {
     return (
         <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
             <div className="max-w-5xl mx-auto rounded-2xl border border-white/[0.08] bg-black/60 backdrop-blur-xl">
-                <div className="flex items-center justify-between h-14 px-6">
+                <div className="relative flex items-center justify-between h-14 px-6">
                     {/* Logo */}
                     <Link href="/" className="text-xl font-bold tracking-tighter text-white">
                         Kliqnet<span className="text-blue-500">.</span>
                     </Link>
 
-                    {/* Desktop Nav */}
-                    <div className="hidden md:flex items-center gap-8">
+                    {/* Desktop Nav — centered absolutely */}
+                    <div className="hidden md:flex items-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                         {navLinks.map((link) => (
                             <Link
                                 key={link.href}
@@ -36,6 +36,10 @@ export function Navbar() {
                                 {link.label}
                             </Link>
                         ))}
+                    </div>
+
+                    {/* Book a Call — right side */}
+                    <div className="hidden md:block">
                         <Button variant="primary" size="sm" asChild>
                             <Link href="/book-a-call">Book a Call</Link>
                         </Button>

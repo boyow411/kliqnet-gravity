@@ -3,45 +3,9 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { RevealSection, StaggerContainer, StaggerItem } from "@/components/motion/reveal";
+import { projects } from "@/data/projects";
 
-const featuredWork = [
-    {
-        slug: "esq-cocktail-bar",
-        client: "ESQ Cocktail Bar & Grill",
-        title: "Hospitality Digital Transformation",
-        industry: "Hospitality",
-        description: "Full-service digital overhaul — from brand identity to a conversion-first booking platform with event management and CRM.",
-        kpis: [
-            { value: "3x", label: "Booking Enquiries" },
-            { value: "45%", label: "Lower Bounce Rate" },
-        ],
-        tech: ["Next.js", "Prisma", "Stripe"],
-    },
-    {
-        slug: "trackacct",
-        client: "TrackAcct",
-        title: "Financial Tracking Platform MVP",
-        industry: "SaaS / FinTech",
-        description: "Turned a complex financial concept into a clean, focused MVP — structured for scalability and investor readiness.",
-        kpis: [
-            { value: "60%", label: "Scope Reduction" },
-            { value: "MVP", label: "Investor Ready" },
-        ],
-        tech: ["React", "Node.js", "PostgreSQL"],
-    },
-    {
-        slug: "mailvara",
-        client: "Mailvara",
-        title: "Email Automation SaaS for Agencies",
-        industry: "SaaS / MarTech",
-        description: "Product positioning, onboarding design, and landing page architecture for a campaign automation platform.",
-        kpis: [
-            { value: "2x", label: "Faster Onboarding" },
-            { value: "3", label: "Pricing Tiers Defined" },
-        ],
-        tech: ["Next.js", "NestJS", "Stripe"],
-    },
-];
+const featured = projects.slice(0, 3);
 
 export function FeaturedWork() {
     return (
@@ -65,41 +29,31 @@ export function FeaturedWork() {
                 </RevealSection>
 
                 <StaggerContainer className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                    {featuredWork.map((project) => (
+                    {featured.map((project) => (
                         <StaggerItem key={project.slug}>
                             <Link
                                 href={`/projects/${project.slug}`}
                                 className="group block h-full rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 hover:border-blue-500/30 hover:bg-white/[0.04] transition-all duration-300"
                             >
-                                {/* Industry chip */}
+                                {/* Category chip */}
                                 <div className="flex items-center justify-between mb-6">
                                     <span className="text-[11px] font-medium text-gray-500 tracking-wider uppercase">
-                                        {project.industry}
+                                        {project.category}
                                     </span>
                                     <ArrowUpRight className="h-4 w-4 text-gray-600 group-hover:text-blue-400 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
                                 </div>
 
-                                {/* Client + Title */}
+                                {/* Name + Description */}
                                 <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-300 transition-colors">
-                                    {project.client}
+                                    {project.name}
                                 </h3>
                                 <p className="text-sm text-gray-500 mb-6 leading-relaxed">
-                                    {project.description}
+                                    {project.shortDescription}
                                 </p>
 
-                                {/* KPIs */}
-                                <div className="flex gap-6 mb-6 pt-4 border-t border-white/[0.06]">
-                                    {project.kpis.map((kpi, i) => (
-                                        <div key={i}>
-                                            <div className="text-2xl font-bold text-white">{kpi.value}</div>
-                                            <div className="text-[11px] text-gray-500 mt-0.5">{kpi.label}</div>
-                                        </div>
-                                    ))}
-                                </div>
-
-                                {/* Tech chips */}
-                                <div className="flex flex-wrap gap-2">
-                                    {project.tech.map((t) => (
+                                {/* Tags */}
+                                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06]">
+                                    {project.industryTags.map((t) => (
                                         <span
                                             key={t}
                                             className="text-[10px] font-medium text-gray-400 bg-white/[0.04] border border-white/[0.08] rounded-full px-3 py-1"
