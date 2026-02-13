@@ -51,10 +51,9 @@ export const projects: Project[] = [
       "A payroll and workforce management platform designed to simplify salary processing and compliance.",
     primaryUrl: "https://www.paytrackpro.com/",
     screenshots: {
-      cardImage: "/projects/paytrack/card.webp",
+      cardImage: "/projects/paytrack/paytrack.jpg",
       gallery: [
-        "/projects/paytrack/gallery-1.webp",
-        "/projects/paytrack/gallery-2.webp",
+        "/projects/paytrack/paytract1.jpg",
       ],
     },
     scopeOfExecution: [
@@ -126,10 +125,9 @@ export const projects: Project[] = [
       "An SME financial tracking platform providing expense management and reporting dashboards.",
     primaryUrl: "https://www.tracct.com/",
     screenshots: {
-      cardImage: "/projects/tracct/card.webp",
+      cardImage: "/projects/tracct/tracct1.jpg",
       gallery: [
-        "/projects/tracct/gallery-1.webp",
-        "/projects/tracct/gallery-2.webp",
+        "/projects/tracct/tracct2.jpg",
       ],
     },
     scopeOfExecution: [
@@ -195,10 +193,9 @@ export const projects: Project[] = [
       "A modular AI video generation platform designed for chunk-based production workflows.",
     primaryUrl: "https://www.veediogram.com",
     screenshots: {
-      cardImage: "/projects/veediogram/card.webp",
+      cardImage: "/projects/veediogram/veediogram1.jpg",
       gallery: [
-        "/projects/veediogram/gallery-1.webp",
-        "/projects/veediogram/gallery-2.webp",
+        "/projects/veediogram/veediogram2.jpg",
       ],
     },
     scopeOfExecution: [
@@ -262,8 +259,8 @@ export const projects: Project[] = [
       "An AI-enhanced email marketing platform with visual builders and automation flows.",
     primaryUrl: "https://www.mailvara.tech/",
     screenshots: {
-      cardImage: "/projects/mailvara/card.webp",
-      gallery: ["/projects/mailvara/gallery-1.webp"],
+      cardImage: "/projects/mailvara/Mailvara.jpg",
+      gallery: ["/projects/mailvara/mailvara1.jpg"],
     },
     scopeOfExecution: [
       "Product Design",
@@ -326,8 +323,8 @@ export const projects: Project[] = [
       "A real-time system connecting guests and DJs inside venues.",
     primaryUrl: "https://www.cuereq.com/",
     screenshots: {
-      cardImage: "/projects/cuereq/card.webp",
-      gallery: [],
+      cardImage: "/projects/cuereq/cuereq1.jpg",
+      gallery: ["/projects/cuereq/cuereq2.jpg"],
     },
     scopeOfExecution: [
       "Product Strategy",
@@ -388,8 +385,8 @@ export const projects: Project[] = [
       "Full website redesign with AI receptionist integration.",
     primaryUrl: "https://monikarestaurants.com/",
     screenshots: {
-      cardImage: "/projects/monika/card.webp",
-      gallery: [],
+      cardImage: "/projects/monika/monika1.jpg",
+      gallery: ["/projects/monika/monika2.jpg"],
     },
     scopeOfExecution: [
       "UX Redesign",
@@ -450,8 +447,8 @@ export const projects: Project[] = [
       "Structured healthcare website designed for compliance, trust and lead capture.",
     primaryUrl: "https://www.shnc.org.uk/",
     screenshots: {
-      cardImage: "/projects/shnc/card.webp",
-      gallery: [],
+      cardImage: "/projects/shnc/shnc.jpg",
+      gallery: ["/projects/shnc/shnc1.jpg"],
     },
     scopeOfExecution: [
       "Full Website Development",
@@ -511,8 +508,8 @@ export const projects: Project[] = [
       "Full digital presence built around bookings, events and brand positioning.",
     primaryUrl: "https://esqgrill.com/",
     screenshots: {
-      cardImage: "/projects/esq/card.webp",
-      gallery: [],
+      cardImage: "/projects/esq/esq1.jpg",
+      gallery: ["/projects/esq/esq2.jpg"],
     },
     scopeOfExecution: [
       "Brand Positioning",
