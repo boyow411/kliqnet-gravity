@@ -4,8 +4,9 @@ import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { RevealSection, StaggerContainer, StaggerItem } from "@/components/motion/reveal";
 import { projects } from "@/data/projects";
+import { ProjectCard } from "@/components/projects/ProjectCard";
 
-const featured = projects.slice(0, 3);
+const featured = projects.slice(0, 4);
 
 export function FeaturedWork() {
     return (
@@ -28,41 +29,10 @@ export function FeaturedWork() {
                     </Link>
                 </RevealSection>
 
-                <StaggerContainer className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {featured.map((project) => (
                         <StaggerItem key={project.slug}>
-                            <Link
-                                href={`/projects/${project.slug}`}
-                                className="group block h-full rounded-2xl border border-white/[0.06] bg-white/[0.02] p-8 hover:border-blue-500/30 hover:bg-white/[0.04] transition-all duration-300"
-                            >
-                                {/* Category chip */}
-                                <div className="flex items-center justify-between mb-6">
-                                    <span className="text-[11px] font-medium text-gray-500 tracking-wider uppercase">
-                                        {project.category}
-                                    </span>
-                                    <ArrowUpRight className="h-4 w-4 text-gray-600 group-hover:text-blue-400 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 transition-all" />
-                                </div>
-
-                                {/* Name + Description */}
-                                <h3 className="text-xl font-semibold text-white mb-2 group-hover:text-blue-300 transition-colors">
-                                    {project.name}
-                                </h3>
-                                <p className="text-sm text-gray-500 mb-6 leading-relaxed">
-                                    {project.shortDescription}
-                                </p>
-
-                                {/* Tags */}
-                                <div className="flex flex-wrap gap-2 pt-4 border-t border-white/[0.06]">
-                                    {project.industryTags.map((t) => (
-                                        <span
-                                            key={t}
-                                            className="text-[10px] font-medium text-gray-400 bg-white/[0.04] border border-white/[0.08] rounded-full px-3 py-1"
-                                        >
-                                            {t}
-                                        </span>
-                                    ))}
-                                </div>
-                            </Link>
+                            <ProjectCard project={project} />
                         </StaggerItem>
                     ))}
                 </StaggerContainer>

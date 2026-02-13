@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { Metadata } from "next";
 import { ArrowLeft, ExternalLink, Check } from "lucide-react";
 import { projects, getProject, getAdjacentProjects } from "@/data/projects";
@@ -159,6 +160,20 @@ export default async function ProjectDetailPage({
                             ))}
                         </div>
                     </div>
+                </div>
+
+                {/* Hero Screenshot */}
+                <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden border border-white/[0.06] mb-16">
+                    <Image
+                        src={project.screenshots.cardImage}
+                        alt={`${project.name} preview`}
+                        fill
+                        className="object-cover object-top"
+                        sizes="100vw"
+                        priority
+                    />
+                    {/* Bottom fade */}
+                    <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent pointer-events-none" />
                 </div>
 
                 {/* Layout: TOC sidebar + Content */}
