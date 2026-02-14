@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Logo } from "@/components/ui/logo";
 
 export function Footer() {
     return (
@@ -45,9 +46,7 @@ export function Footer() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
                     {/* Brand */}
                     <div className="col-span-2 lg:col-span-2" style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
-                        <Link href="/" className="inline-block text-2xl font-bold tracking-tighter text-white">
-                            Kliqnet<span className="text-blue-500">.</span>
-                        </Link>
+                        <Logo className="text-2xl" />
                         <p className="text-gray-500 text-sm leading-relaxed max-w-sm">
                             We build web apps, mobile apps, SaaS platforms, and automation systems for businesses serious about growth. Operator-led, product-minded, results-driven.
                         </p>

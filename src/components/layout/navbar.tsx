@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Logo } from "@/components/ui/logo";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
@@ -21,9 +22,8 @@ export function Navbar() {
             <div className="max-w-5xl mx-auto rounded-2xl border border-white/[0.08] bg-black/60 backdrop-blur-xl">
                 <div className="relative flex items-center justify-between h-14 px-6">
                     {/* Logo */}
-                    <Link href="/" className="text-xl font-bold tracking-tighter text-white">
-                        Kliqnet<span className="text-blue-500">.</span>
-                    </Link>
+                    {/* Logo */}
+                    <Logo />
 
                     {/* Desktop Nav — centered absolutely */}
                     <div className="hidden md:flex items-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
