@@ -71,10 +71,31 @@ export function MultiStepForm() {
 
     const handleSubmit = async () => {
         setIsSubmitting(true);
-        // TODO: Connect to Neon DB or API
-        await new Promise((resolve) => setTimeout(resolve, 1500));
-        alert("Thank you! We'll be in touch within 24 hours.");
-        setIsSubmitting(false);
+        try {
+            const res = await fetch("/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                    name: formData.name,
+                    email: formData.email,
+                    company: formData.company,
+                    message: formData.message,
+                    projectType: formData.projectType,
+                    budget: formData.budget,
+                    timeline: formData.timeline,
+                    businessStage: formData.businessStage,
+                }),
+            });
+            if (res.ok) {
+                alert("Thank you! We'll be in touch within 24 hours.");
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch {
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     return (
