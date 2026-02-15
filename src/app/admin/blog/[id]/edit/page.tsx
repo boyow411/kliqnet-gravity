@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { ArrowLeft, Save, Loader2, Trash2 } from "lucide-react";
 import Link from "next/link";
+import { ImageUpload } from "@/components/admin/image-upload";
 
 function estimateReadingTime(content: string): string {
     const words = content.trim().split(/\s+/).length;
@@ -25,6 +26,7 @@ export default function EditBlogPostPage() {
         slug: "",
         excerpt: "",
         content: "",
+        coverImage: "",
         category: "Engineering",
         authorName: "",
         authorRole: "",
@@ -42,6 +44,7 @@ export default function EditBlogPostPage() {
                     slug: post.slug,
                     excerpt: post.excerpt,
                     content: post.content,
+                    coverImage: post.coverImage || "",
                     category: post.category,
                     authorName: post.authorName,
                     authorRole: post.authorRole,
@@ -149,6 +152,14 @@ export default function EditBlogPostPage() {
                             className="w-full px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white focus:border-blue-500/50 outline-none text-sm resize-y"
                         />
                     </div>
+
+                    <ImageUpload
+                        value={form.coverImage}
+                        onChange={(url) => updateField("coverImage", url)}
+                        label="Cover Image"
+                        description="Drag and drop a cover image or click to browse"
+                    />
+
                     <div>
                         <label className="block text-sm font-medium text-gray-300 mb-1.5">Content (Markdown)</label>
                         <textarea

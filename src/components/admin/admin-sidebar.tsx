@@ -14,6 +14,8 @@ import {
     Menu,
     X,
     ChevronRight,
+    Users,
+    FileCode,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -21,6 +23,8 @@ const navItems = [
     { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
     { href: "/admin/blog", label: "Blog Posts", icon: FileText },
     { href: "/admin/projects", label: "Projects", icon: Briefcase },
+    { href: "/admin/onboarding", label: "Onboarding", icon: Users },
+    { href: "/admin/templates", label: "Templates", icon: FileCode },
     { href: "/admin/submissions", label: "Submissions", icon: Inbox },
     { href: "/admin/settings", label: "Settings", icon: Settings },
 ];

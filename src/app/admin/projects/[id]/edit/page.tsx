@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { ArrowLeft, Save, Loader2, Trash2 } from "lucide-react";
 import Link from "next/link";
+import { ImageUpload, MultiImageUpload } from "@/components/admin/image-upload";
 
 export default function EditProjectPage() {
     const router = useRouter();
@@ -27,6 +28,9 @@ export default function EditProjectPage() {
         featured: false,
     });
 
+    const [coverImage, setCoverImage] = useState("");
+    const [galleryImages, setGalleryImages] = useState<string[]>([]);
+
     useEffect(() => {
         async function fetchProject() {
             const res = await fetch(`/api/admin/projects/${id}`);
@@ -44,6 +48,12 @@ export default function EditProjectPage() {
                     published: project.published,
                     featured: project.featured,
                 });
+                // Load images from data JSONB
+                const data = project.data as Record<string, unknown> | null;
+                if (data) {
+                    setCoverImage((data.coverImage as string) || "");
+                    setGalleryImages((data.screenshots as string[]) || []);
+                }
             } else {
                 setError("Project not found");
             }
@@ -64,7 +74,13 @@ export default function EditProjectPage() {
         const res = await fetch(`/api/admin/projects/${id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ ...form, data: {} }),
+            body: JSON.stringify({
+                ...form,
+                data: {
+                    coverImage,
+                    screenshots: galleryImages,
+                },
+            }),
         });
 
         if (res.ok) {
@@ -131,6 +147,22 @@ export default function EditProjectPage() {
                         <textarea value={form.shortDescription} onChange={(e) => updateField("shortDescription", e.target.value)} required rows={3}
                             className="w-full px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white focus:border-blue-500/50 outline-none text-sm resize-y" />
                     </div>
+                </div>
+
+                {/* Images */}
+                <div className="bg-white/[0.03] border border-white/8 rounded-xl p-6 space-y-5">
+                    <ImageUpload
+                        value={coverImage}
+                        onChange={setCoverImage}
+                        label="Cover Image"
+                        description="Drag and drop a cover image or click to browse"
+                    />
+                    <MultiImageUpload
+                        values={galleryImages}
+                        onChange={setGalleryImages}
+                        label="Gallery / Screenshots"
+                        max={10}
+                    />
                 </div>
 
                 <div className="bg-white/[0.03] border border-white/8 rounded-xl p-6 space-y-5">

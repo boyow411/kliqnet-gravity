@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Save, Loader2 } from "lucide-react";
 import Link from "next/link";
+import { ImageUpload } from "@/components/admin/image-upload";
 
 function generateSlug(title: string): string {
     return title
@@ -28,6 +29,7 @@ export default function NewBlogPostPage() {
         slug: "",
         excerpt: "",
         content: "",
+        coverImage: "",
         category: "Engineering",
         authorName: "Kliqnet Team",
         authorRole: "Engineering",
@@ -126,6 +128,13 @@ export default function NewBlogPostPage() {
                             placeholder="A short summary for the blog listing page..."
                         />
                     </div>
+
+                    <ImageUpload
+                        value={form.coverImage}
+                        onChange={(url) => updateField("coverImage", url)}
+                        label="Cover Image"
+                        description="Drag and drop a cover image or click to browse"
+                    />
 
                     <div>
                         <label className="block text-sm font-medium text-gray-300 mb-1.5">

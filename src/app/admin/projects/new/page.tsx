@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Save, Loader2 } from "lucide-react";
 import Link from "next/link";
+import { ImageUpload, MultiImageUpload } from "@/components/admin/image-upload";
 
 function generateSlug(name: string): string {
     return name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
@@ -27,6 +28,9 @@ export default function NewProjectPage() {
         featured: false,
     });
 
+    const [coverImage, setCoverImage] = useState("");
+    const [galleryImages, setGalleryImages] = useState<string[]>([]);
+
     function updateField(field: string, value: string | boolean) {
         setForm((prev) => {
             const updated = { ...prev, [field]: value };
@@ -47,7 +51,10 @@ export default function NewProjectPage() {
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
                 ...form,
-                data: {},
+                data: {
+                    coverImage,
+                    screenshots: galleryImages,
+                },
             }),
         });
 
@@ -99,6 +106,22 @@ export default function NewProjectPage() {
                             className="w-full px-4 py-2.5 bg-white/5 border border-white/10 rounded-lg text-white focus:border-blue-500/50 outline-none text-sm resize-y"
                             placeholder="Brief project overview..." />
                     </div>
+                </div>
+
+                {/* Images */}
+                <div className="bg-white/[0.03] border border-white/8 rounded-xl p-6 space-y-5">
+                    <ImageUpload
+                        value={coverImage}
+                        onChange={setCoverImage}
+                        label="Cover Image"
+                        description="Drag and drop a cover image or click to browse"
+                    />
+                    <MultiImageUpload
+                        values={galleryImages}
+                        onChange={setGalleryImages}
+                        label="Gallery / Screenshots"
+                        max={10}
+                    />
                 </div>
 
                 <div className="bg-white/[0.03] border border-white/8 rounded-xl p-6 space-y-5">
