@@ -556,6 +556,250 @@ export const projects: Project[] = [
       buttonHref: "/contact",
     },
   },
+
+  /* ───────────────────────────────────────────────── */
+  /* 9. AIDESK                                         */
+  /* ───────────────────────────────────────────────── */
+  {
+    slug: "aidesk",
+    name: "AIDesk",
+    category: "Venture Studio",
+    industryTags: ["AI", "Local Business", "SaaS", "Automation"],
+    status: "Live",
+    tagline: "Your AI receptionist — never miss a call, booking, or lead.",
+    shortDescription:
+      "An all-in-one AI-powered platform helping local businesses manage customers, automate tasks, and grow revenue.",
+    primaryUrl: "https://aidesk-gravity.vercel.app/",
+    screenshots: {
+      cardImage: "/projects/AIDesk/aidesk.jpg",
+      gallery: ["/projects/AIDesk/aidesk1.jpg"],
+    },
+    scopeOfExecution: [
+      "AI Product Strategy",
+      "UI/UX Design",
+      "Backend Architecture",
+      "AI Receptionist Engine",
+      "CRM & Unified Inbox",
+      "Stripe Billing Integration",
+      "Marketing Website Development",
+      "Deployment & Optimisation",
+    ],
+    about:
+      "AIDesk is an all-in-one platform for local businesses — from salons and clinics to restaurants and repair shops. It replaces front-desk chaos with an AI receptionist that handles enquiries, books appointments, and qualifies leads around the clock. The platform unifies SMS, email, and chat into a single inbox, automates follow-ups and reminders, and provides real-time analytics dashboards to drive data-informed decisions.",
+    whatWasDone: [
+      "Built AI receptionist with natural-language conversation handling",
+      "Developed smart booking system with availability management and calendar sync",
+      "Implemented unified inbox aggregating SMS, email, and live chat",
+      "Created CRM with automatic contact enrichment and audience segmentation",
+      "Built automation engine for welcome messages, follow-ups, and review requests",
+      "Designed funnel builder for landing pages and lead capture",
+      "Developed real-time analytics dashboard",
+    ],
+    howItWasDone: [
+      "Designed conversational AI pipeline for human-like customer interactions",
+      "Built event-driven automation engine with configurable triggers",
+      "Structured scalable multi-tenant backend architecture",
+      "Integrated secure payment processing via Stripe",
+      "Implemented HMAC-signed webhook system for external integrations",
+    ],
+    technologyUsed: {
+      frontend: ["Next.js", "React", "Tailwind CSS"],
+      backend: ["Node.js", "API Layer"],
+      database: ["PostgreSQL", "Neon"],
+      integrations: ["Stripe", "AI APIs", "SES Email", "Webhooks"],
+      hosting: ["Vercel"],
+    },
+    timeline: {
+      durationLabel: "8–10 Weeks",
+      phases: ["Discovery", "AI Architecture", "Build", "QA Testing", "Launch"],
+    },
+    challenges: [
+      {
+        challenge: "Making AI conversations feel natural and context-aware.",
+        solution:
+          "Designed a multi-turn conversation engine with context retention and fallback routing.",
+      },
+      {
+        challenge: "Unifying multiple communication channels without message loss.",
+        solution:
+          "Built a centralised message bus aggregating SMS, email, and chat into a single thread-based inbox.",
+      },
+    ],
+    results: [
+      { label: "Platform Status", value: "Live & Operational" },
+      { label: "AI Coverage", value: "80% of enquiries handled automatically" },
+      { label: "Architecture", value: "Multi-Tenant SaaS Infrastructure" },
+    ],
+    cta: {
+      title: "Need an AI-Powered Business Platform?",
+      copy: "Let's build intelligent automation for your business.",
+      buttonLabel: "Start a Project",
+      buttonHref: "/contact",
+    },
+  },
+
+  /* ───────────────────────────────────────────────── */
+  /* 10. VERALLEY                                      */
+  /* ───────────────────────────────────────────────── */
+  {
+    slug: "veralley",
+    name: "Veralley",
+    category: "Venture Studio",
+    industryTags: ["FaithTech", "AI", "Mobile App", "Community"],
+    status: "Live",
+    tagline: "Experience Scripture like never before.",
+    shortDescription:
+      "An AI-powered faith platform with personalised devotionals, Bible study tools, trivia battles, and community circles.",
+    primaryUrl: "https://www.veralley.com/",
+    screenshots: {
+      cardImage: "/projects/Veralley/veralley.jpg",
+      gallery: ["/projects/Veralley/veralley1.jpg"],
+    },
+    scopeOfExecution: [
+      "Product Strategy & Roadmap",
+      "Mobile-First UI/UX Design",
+      "AI Engine Development",
+      "Community & Social Features",
+      "Gamification System",
+      "PWA Architecture",
+      "Marketing Website Development",
+      "Deployment & Optimisation",
+    ],
+    about:
+      "Veralley transforms how people engage with Scripture through AI-powered devotionals, a smart Bible reader, and interactive community features. The platform offers mood-based devotionals, WWJD scenario simulations, and a trivia arena — all designed to make faith growth personal, consistent, and communal. Users build streaks, join faith circles, and explore Scripture with three AI engines as their study partner.",
+    whatWasDone: [
+      "Built AI Bible companion with three integrated AI engines",
+      "Developed smart Bible reader with listen, highlight, and note features",
+      "Created mood-based devotional generator",
+      "Implemented trivia arena for interactive Bible learning",
+      "Built WWJD scenario simulation engine",
+      "Designed faith circles for community engagement",
+      "Developed streak and gamification system",
+    ],
+    howItWasDone: [
+      "Designed personalised AI pipelines for devotional and study content",
+      "Built mobile-first PWA architecture for cross-platform access",
+      "Structured gamification system with streaks, milestones, and leaderboards",
+      "Implemented social features for community-driven faith growth",
+      "Optimised onboarding flow for rapid personalisation",
+    ],
+    technologyUsed: {
+      frontend: ["Next.js", "React", "Tailwind CSS", "PWA"],
+      backend: ["Node.js", "API Layer"],
+      database: ["PostgreSQL", "Neon"],
+      integrations: ["AI APIs", "Stripe"],
+      hosting: ["Vercel"],
+    },
+    timeline: {
+      durationLabel: "10–12 Weeks",
+      phases: ["Research", "UX Design", "AI Integration", "Build", "Testing", "Launch"],
+    },
+    challenges: [
+      {
+        challenge: "Generating contextually accurate AI devotionals from Scripture.",
+        solution:
+          "Developed structured prompt engineering with verse-level validation and mood-context mapping.",
+      },
+      {
+        challenge: "Maintaining engagement through daily habit formation.",
+        solution:
+          "Implemented a multi-layered gamification system with streaks, milestones, and social accountability.",
+      },
+    ],
+    results: [
+      { label: "Platform Status", value: "Live & Growing" },
+      { label: "Architecture", value: "Mobile-First PWA" },
+      { label: "AI Engines", value: "3 Integrated AI Study Partners" },
+    ],
+    cta: {
+      title: "Building a Community Platform?",
+      copy: "Let's create an engaging, AI-powered experience.",
+      buttonLabel: "Start a Project",
+      buttonHref: "/contact",
+    },
+  },
+
+  /* ───────────────────────────────────────────────── */
+  /* 11. SIGNOFF360                                    */
+  /* ───────────────────────────────────────────────── */
+  {
+    slug: "signoff360",
+    name: "Signoff360",
+    category: "Venture Studio",
+    industryTags: ["Healthcare", "Compliance", "SaaS", "HR Tech"],
+    status: "Live",
+    tagline: "Total workforce compliance for UK care providers.",
+    shortDescription:
+      "A workforce compliance and clinical governance platform purpose-built for UK care providers and CQC readiness.",
+    primaryUrl: "https://www.signoff360.com/",
+    screenshots: {
+      cardImage: "/projects/Signoff360/signoff360.jpg",
+      gallery: ["/projects/Signoff360/signoff360-1.jpg"],
+    },
+    scopeOfExecution: [
+      "Product Strategy & Compliance Mapping",
+      "UI/UX Design",
+      "Backend Architecture",
+      "Compliance Engine",
+      "Training Management System",
+      "Clinical Competency Tracking",
+      "Stripe Billing Integration",
+      "Marketing Website Development",
+      "Deployment & Optimisation",
+    ],
+    about:
+      "Signoff360 is a workforce compliance platform built specifically for UK care providers. It replaces spreadsheet chaos with real-time compliance visibility, automated renewal protection, and clinical competency sign-off. The platform covers the full compliance lifecycle — from recruitment and onboarding through training management, DBS tracking, and CQC inspection readiness — ensuring care providers never miss a renewal or allocate unqualified staff.",
+    whatWasDone: [
+      "Built compliance gating engine with automated renewal alerts",
+      "Developed clinical competency sign-off and tracking system",
+      "Implemented training management with live training matrix",
+      "Created recruitment and onboarding workflow",
+      "Built client package authorisation module",
+      "Designed audit trail and DBS expiry reporting",
+      "Developed real-time compliance dashboard",
+    ],
+    howItWasDone: [
+      "Mapped CQC inspection requirements into digital compliance rules",
+      "Designed automated alerting for document expirations and renewals",
+      "Built role-based access for care managers and clinical leads",
+      "Structured tiered subscription model via Stripe",
+      "Focused on clarity-first UX for non-technical care staff",
+    ],
+    technologyUsed: {
+      frontend: ["Next.js", "React", "Tailwind CSS"],
+      backend: ["Node.js", "Prisma"],
+      database: ["PostgreSQL", "Neon"],
+      integrations: ["Stripe", "Email Notifications"],
+      hosting: ["Vercel"],
+    },
+    timeline: {
+      durationLabel: "10–12 Weeks",
+      phases: ["Compliance Mapping", "UX Design", "Backend Build", "QA Testing", "Launch"],
+    },
+    challenges: [
+      {
+        challenge: "Translating complex CQC compliance rules into an intuitive interface.",
+        solution:
+          "Designed a structured compliance gating system with traffic-light status indicators and automated alerts.",
+      },
+      {
+        challenge: "Ensuring care managers can use the system without technical training.",
+        solution:
+          "Built clarity-first UX with guided workflows and contextual help throughout.",
+      },
+    ],
+    results: [
+      { label: "Platform Status", value: "Live & Operational" },
+      { label: "Compliance Coverage", value: "Full CQC Inspection Readiness" },
+      { label: "Architecture", value: "Multi-Tenant SaaS Infrastructure" },
+    ],
+    cta: {
+      title: "Building a Compliance Platform?",
+      copy: "Let's architect a system that keeps your workforce compliant.",
+      buttonLabel: "Start a Project",
+      buttonHref: "/contact",
+    },
+  },
 ]
 
 /* ── Helper functions ── */
