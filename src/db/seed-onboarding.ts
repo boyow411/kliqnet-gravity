@@ -12,6 +12,17 @@ import { eq } from "drizzle-orm";
 const sql = neon(process.env.DATABASE_URL!);
 const db = drizzle(sql, { schema });
 
+function requireEnv(name: string): string {
+    const value = process.env[name];
+    if (!value) {
+        throw new Error(`${name} is required to seed the admin user.`);
+    }
+    return value;
+}
+
+const seedAdminEmail = requireEnv("ADMIN_SEED_EMAIL");
+const seedAdminPassword = requireEnv("ADMIN_SEED_PASSWORD");
+
 const EXAMPLE_TEMPLATE_STEPS = [
     {
         id: "business_overview",
@@ -197,11 +208,11 @@ async function seed() {
         console.log(`✓ Created organization 'Kliqnet Digital' (ID: ${orgId})`);
     }
 
-    // 2. Create admin user with hashed password
+    // 2. Create admin user with hashed password from explicit environment configuration
     const [existingUser] = await db
         .select()
         .from(schema.users)
-        .where(eq(schema.users.email, "admin@kliqnet.com"));
+        .where(eq(schema.users.email, seedAdminEmail));
 
     if (existingUser) {
         // Update existing user with org and role
@@ -210,7 +221,7 @@ async function seed() {
             .set({
                 organizationId: orgId,
                 role: "SUPER_ADMIN",
-                passwordHash: await bcrypt.hash("admin", 12),
+                passwordHash: await bcrypt.hash(seedAdminPassword, 12),
                 updatedAt: new Date(),
             })
             .where(eq(schema.users.id, existingUser.id));
@@ -219,9 +230,9 @@ async function seed() {
         const [user] = await db
             .insert(schema.users)
             .values({
-                email: "admin@kliqnet.com",
+                email: seedAdminEmail,
                 name: "Admin",
-                passwordHash: await bcrypt.hash("admin", 12),
+                passwordHash: await bcrypt.hash(seedAdminPassword, 12),
                 role: "SUPER_ADMIN",
                 organizationId: orgId,
             })

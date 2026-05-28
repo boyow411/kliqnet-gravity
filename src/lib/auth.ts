@@ -59,20 +59,6 @@ export const authOptions: NextAuthOptions = {
                     }
                 }
 
-                // Fallback: hardcoded admin for initial setup
-                // Remove this block once DB users are seeded
-                if (
-                    credentials.email === "admin@kliqnet.com" &&
-                    credentials.password === "admin"
-                ) {
-                    return {
-                        id: "1",
-                        name: "Admin",
-                        email: "admin@kliqnet.com",
-                        role: "SUPER_ADMIN",
-                        organizationId: null,
-                    };
-                }
 
                 return null;
             },
