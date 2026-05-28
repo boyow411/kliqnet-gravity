@@ -1,14 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/lib/auth";
+import { hasPermission, isValidRole } from "@/modules/auth/types";
 import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 import crypto from "crypto";
 
 export async function POST(req: NextRequest) {
     const session = await getServerSession(authOptions);
-    if (!session) {
-        return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    if (!session?.user?.role || !isValidRole(session.user.role) || !hasPermission(session.user.role, "manage:blog")) {
+        return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 
     try {
