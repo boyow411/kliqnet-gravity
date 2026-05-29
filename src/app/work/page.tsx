@@ -30,7 +30,7 @@ export default function WorkPage() {
                 >
                     <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight text-center">Our Work</h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto text-center mb-12">
-                        Real results for real businesses. Explore how we've helped clients scale.
+                        Real results for real businesses. Explore how we&apos;ve helped clients scale.
                     </p>
                 </motion.div>
 

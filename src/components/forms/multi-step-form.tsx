@@ -196,7 +196,7 @@ export function MultiStepForm() {
                     {currentStep === 3 && (
                         <div className="space-y-8">
                             <div>
-                                <h2 className="text-2xl font-bold text-white mb-4">What's your budget range?</h2>
+                                <h2 className="text-2xl font-bold text-white mb-4">What&apos;s your budget range?</h2>
                                 <div className="flex flex-wrap gap-3">
                                     {budgetRanges.map((budget) => (
                                         <button

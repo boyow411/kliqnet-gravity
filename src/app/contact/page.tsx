@@ -11,7 +11,7 @@ export default function ContactPage() {
             <div className="container mx-auto px-4">
                 <div className="text-center max-w-2xl mx-auto mb-12">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-                        Let's Build Something Great
+                        Let&apos;s Build Something Great
                     </h1>
                     <p className="text-lg text-gray-400">
                         Answer a few quick questions so we can understand your needs and prepare a tailored proposal.

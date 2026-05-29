@@ -40,9 +40,11 @@ export default function AdminProjectsPage() {
         setLoading(false);
     }
 
+    /* eslint-disable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps -- admin table fetches after pagination/filter changes; search is submitted explicitly. */
     useEffect(() => {
         fetchProjects(page, search, categoryFilter);
     }, [page, categoryFilter]);
+    /* eslint-enable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps */
 
     function handleSearch(e: React.FormEvent) {
         e.preventDefault();

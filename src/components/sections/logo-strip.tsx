@@ -16,7 +16,7 @@ export function LogoStrip() {
                 <RevealSection>
                     <div className="text-center mb-10">
                         <span className="inline-block text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-500 border border-white/[0.08] rounded-full px-4 py-1.5">
-                            Trusted by Operators
+                            Proof before promises
                         </span>
                     </div>
 

@@ -70,9 +70,11 @@ export default function AdminSubmissionsPage() {
         setLoading(false);
     }, []);
 
+    /* eslint-disable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps -- admin table fetches after pagination/filter changes; search is submitted explicitly. */
     useEffect(() => {
         fetchSubmissions(page, search, statusFilter);
     }, [page, statusFilter, fetchSubmissions]);
+    /* eslint-enable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps */
 
     function handleSearch(e: React.FormEvent) {
         e.preventDefault();
