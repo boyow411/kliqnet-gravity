@@ -115,7 +115,7 @@ export default async function CaseStudyPage({ params }: { params: Promise<{ slug
                     {/* CTA */}
                     <div className="text-center p-12 bg-blue-900/20 rounded-2xl border border-blue-500/20">
                         <h3 className="text-2xl font-bold mb-4">Ready to achieve similar results?</h3>
-                        <p className="text-gray-400 mb-8">Let's discuss how we can help your business grow.</p>
+                        <p className="text-gray-400 mb-8">Let&apos;s discuss how we can help your business grow.</p>
                         <Button size="lg" asChild>
                             <Link href="/book-a-call">Book a Strategy Call</Link>
                         </Button>

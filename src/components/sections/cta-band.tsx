@@ -18,14 +18,14 @@ export function CTABand() {
                 <ScaleIn>
                     <div className="max-w-3xl mx-auto text-center">
                         <span className="inline-block text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-500 mb-6">
-                            Let&apos;s Talk
+                            Tell us what you&apos;re building
                         </span>
                         <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
-                            Ready to build something{" "}
-                            <span className="text-blue-500">that works?</span>
+                            Ready to turn the idea, funnel or workflow into{" "}
+                            <span className="text-blue-500">a real system?</span>
                         </h2>
                         <p className="text-gray-400 text-lg md:text-xl max-w-xl mx-auto mb-10 leading-relaxed">
-                            Whether you need a web app, mobile app, SaaS platform, or automation system — we&apos;ll help you scope it, build it, and ship it. No fluff, no waste.
+                            Whether you need a website, mobile app, SaaS platform, CRM, AI workflow or automation system — we&apos;ll help you scope it, build it and launch it with a clear commercial purpose.
                         </p>
                         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Button
@@ -34,12 +34,12 @@ export function CTABand() {
                                 asChild
                             >
                                 <Link href="/book-a-call">
-                                    Book a Strategy Call
+                                    Book a Free Strategy Call
                                     <ArrowRight className="ml-2 h-4 w-4" />
                                 </Link>
                             </Button>
                             <span className="text-sm text-gray-600">
-                                Free 30-minute consultation
+                                24hr response • practical scope before build
                             </span>
                         </div>
                     </div>

@@ -150,30 +150,57 @@ export function Hero() {
                             href="/services"
                             className="inline-flex items-center gap-2 rounded-full border border-white/[0.12] bg-white/[0.04] px-4 py-1.5 text-sm text-gray-400 hover:text-white hover:border-white/20 transition-all"
                         >
-                            Full-service digital agency
+                            Product studio for web, SaaS, AI and automation
                             <ArrowRight className="h-3.5 w-3.5" />
                         </Link>
                     </motion.div>
 
                     {/* Heading */}
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-white leading-[1.1]">
-                        Building Digital Products &{" "}
-                        <span className="text-blue-500">Growth Systems</span> That Scale
+                        Build the website, app or system your{" "}
+                        <span className="text-blue-500">business actually needs.</span>
                     </h1>
 
                     {/* Subtitle */}
                     <p className="text-lg md:text-xl text-gray-400 max-w-xl mx-auto leading-relaxed">
-                        Web, mobile and software solutions designed to convert, automate and
-                        grow your business.
+                        Kliqnet Digital designs and builds high-converting websites, SaaS
+                        platforms, mobile apps and automation systems for businesses ready to
+                        grow, streamline operations and launch faster.
                     </p>
 
                     {/* CTA */}
-                    <div className="pt-2">
-                        <Button size="lg" className="text-base h-12 px-8 rounded-lg" asChild>
-                            <Link href="/book-a-call">
-                                Get Started
-                            </Link>
-                        </Button>
+                    <div className="pt-2 space-y-5">
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                            <Button size="lg" className="text-base h-12 px-8 rounded-lg" asChild>
+                                <Link href="/book-a-call">
+                                    Book a Free Strategy Call
+                                    <ArrowRight className="ml-2 h-4 w-4" />
+                                </Link>
+                            </Button>
+                            <Button
+                                size="lg"
+                                variant="outline"
+                                className="text-base h-12 px-8 rounded-lg border-white/[0.14] bg-white/[0.03]"
+                                asChild
+                            >
+                                <Link href="/projects">
+                                    View Our Work
+                                </Link>
+                            </Button>
+                        </div>
+                        <p className="text-sm text-gray-500">
+                            24hr response • 4-8 week delivery sprints • Web, mobile, SaaS, AI and automation
+                        </p>
+                        <div className="flex flex-wrap items-center justify-center gap-2 pt-1">
+                            {["50+ projects delivered", "4 countries served", "98% client retention", "24hr response time"].map((chip) => (
+                                <span
+                                    key={chip}
+                                    className="rounded-full border border-white/[0.08] bg-white/[0.03] px-3 py-1 text-xs text-gray-400"
+                                >
+                                    {chip}
+                                </span>
+                            ))}
+                        </div>
                     </div>
                 </motion.div>
             </div>

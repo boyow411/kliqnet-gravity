@@ -47,9 +47,11 @@ export default function AdminBlogPage() {
         setLoading(false);
     }
 
+    /* eslint-disable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps -- admin table fetches after pagination changes; search is submitted explicitly. */
     useEffect(() => {
         fetchPosts(page, search);
     }, [page]);
+    /* eslint-enable react-hooks/set-state-in-effect, react-hooks/exhaustive-deps */
 
     function handleSearch(e: React.FormEvent) {
         e.preventDefault();

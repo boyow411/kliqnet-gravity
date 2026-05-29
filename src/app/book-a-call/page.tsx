@@ -46,7 +46,7 @@ export default function BookACallPage() {
                         {/* Left: What to Expect */}
                         <div className="space-y-10">
                             <div>
-                                <h2 className="text-2xl font-bold mb-6">What We'll Cover</h2>
+                                <h2 className="text-2xl font-bold mb-6">What We&apos;ll Cover</h2>
                                 <ul className="space-y-4">
                                     {whatWeDiscuss.map((item, index) => (
                                         <li key={index} className="flex items-start gap-4">
@@ -89,7 +89,7 @@ export default function BookACallPage() {
                             <Calendar className="w-16 h-16 text-blue-500 mb-6" />
                             <h3 className="text-2xl font-bold mb-4">Schedule Your Call</h3>
                             <p className="text-gray-400 mb-8 max-w-sm">
-                                Pick a time that works for you. We'll send a confirmation with a Zoom link.
+                                Pick a time that works for you. We&apos;ll send a confirmation with a Zoom link.
                             </p>
 
                             {/* Placeholder for Calendly / Cal.com embed */}

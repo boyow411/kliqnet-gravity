@@ -27,64 +27,64 @@ import { RevealSection, StaggerContainer, StaggerItem } from "@/components/motio
 const services = [
     {
         icon: Globe,
-        title: "Web Development",
-        description: "High-performance websites and web applications built on Next.js. We focus on speed, SEO, accessibility, and conversion — delivering sites that load in under 2 seconds and rank on page one.",
-        features: ["Next.js / React", "Headless CMS", "SEO-optimised", "Sub-2s load times"],
+        title: "Website Growth Builds",
+        description: "For businesses that need a website customers can trust and take action on. We shape the positioning, pages, booking/contact funnel, technical SEO and launch plan around stronger enquiries.",
+        features: ["Positioning", "Premium UI", "Booking funnels", "Technical SEO"],
         href: "/web-development",
         id: "svc-webdev",
     },
     {
         icon: Smartphone,
-        title: "Mobile App Development",
-        description: "Native-quality mobile applications for iOS and Android using React Native. From consumer apps to internal business tools — we ship cross-platform apps that feel native on every device.",
-        features: ["React Native", "iOS & Android", "Push notifications", "Offline-capable"],
+        title: "Mobile App Builds",
+        description: "For customer apps, internal tools and app-based product ideas. We design reliable mobile flows around speed, clarity, retention and the core action users need to take.",
+        features: ["React Native", "iOS & Android", "User accounts", "Store launch"],
         href: "/app-development",
         id: "svc-mobile",
     },
     {
         icon: Layout,
-        title: "SaaS Platforms",
-        description: "Full-stack SaaS products with multi-tenant architecture, billing integration via Stripe, role-based access control, and admin dashboards built to scale from MVP to 10k+ users.",
-        features: ["Multi-tenant", "Stripe billing", "RBAC", "Admin dashboards"],
+        title: "SaaS / MVP Builds",
+        description: "For founders and teams that need a real product, not just a prototype. We define the MVP, design the UX, build the core platform and prepare it for launch without overbuilding.",
+        features: ["MVP scoping", "Full-stack build", "Stripe billing", "Admin dashboards"],
         href: "/saas-development",
         id: "svc-saas",
     },
     {
         icon: Workflow,
-        title: "Workflow Automation",
-        description: "Eliminate repetitive tasks with custom automation workflows. We connect your tools — CRM, email, payments, scheduling — into seamless processes using n8n, Zapier, and custom APIs.",
-        features: ["n8n / Zapier", "API integrations", "CRM automation", "Custom pipelines"],
+        title: "Automation & CRM Sprints",
+        description: "For teams drowning in manual admin, scattered tools and missed follow-ups. We map the workflow, connect the right systems and make your pipeline easier to manage.",
+        features: ["Workflow mapping", "CRM setup", "Lead routing", "Dashboards"],
         href: "/automation",
         id: "svc-automation",
     },
     {
         icon: Bot,
-        title: "AI Integration",
-        description: "Embed AI into your products and operations — from intelligent chatbots and document processing to recommendation engines and automated content generation powered by LLMs.",
-        features: ["LLM integration", "Chatbots", "Document AI", "Custom agents"],
+        title: "AI Workflow Integration",
+        description: "For businesses that want AI doing useful work inside support, bookings, documents or operations. We scope the use case, design guardrails and connect AI to real workflows.",
+        features: ["Use-case scoping", "AI chatbots", "Document AI", "Guardrails"],
         href: "/ai-integration",
         id: "svc-ai",
     },
     {
         icon: BarChart3,
-        title: "SEO & Growth",
-        description: "Data-driven SEO and content strategies that drive organic traffic. We handle technical SEO, on-page optimisation, keyword strategy, and performance tracking to get you found.",
+        title: "SEO & Growth Systems",
+        description: "For brands that need the technical foundation, content structure and measurement layer to turn a polished build into discoverable, trackable growth.",
         features: ["Technical SEO", "Content strategy", "Analytics", "Rank tracking"],
         href: "/digital-marketing",
         id: "svc-seo",
     },
     {
         icon: Megaphone,
-        title: "Paid Advertising",
-        description: "Performance marketing on Google Ads and Meta that delivers measurable ROI. We build, test, and optimise campaigns with clear attribution from click to conversion.",
+        title: "Paid Growth Funnels",
+        description: "For teams ready to test acquisition with a clearer click-to-conversion path. We connect landing pages, campaigns and attribution so performance is easier to judge.",
         features: ["Google Ads", "Meta Ads", "A/B testing", "ROAS tracking"],
         href: "/digital-marketing",
         id: "svc-paidads",
     },
     {
         icon: Zap,
-        title: "CRM & Operations",
-        description: "Streamline your sales pipeline and operations with custom CRM setups, lead scoring, automated follow-ups, and reporting dashboards that give you real-time visibility into your business.",
+        title: "CRM & Operations Systems",
+        description: "For operators who need visibility across leads, follow-ups, customer status and delivery. We build the dashboards and automations that reduce manual chasing.",
         features: ["HubSpot / Custom CRM", "Lead scoring", "Auto follow-ups", "Dashboards"],
         href: "/crm-operations",
         id: "svc-crm",
@@ -133,13 +133,13 @@ export function ServicesGrid() {
             <div className="container mx-auto px-4 relative z-10">
                 <RevealSection className="text-center max-w-3xl mx-auto mb-16">
                     <span className="inline-block text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-500 mb-4">
-                        What We Do
+                        Choose the build that matches the business problem
                     </span>
                     <h2 className="text-3xl md:text-5xl font-bold mb-6">
-                        End-to-end digital services
+                        Clear packages for websites, apps, SaaS, automation and AI.
                     </h2>
                     <p className="text-gray-400 text-lg leading-relaxed">
-                        From product strategy to launch and growth — we cover the full stack of digital services so you can focus on running your business.
+                        You do not need to decode a long agency service menu. Start with the outcome you need, then Kliqnet shapes the strategy, design and build around it.
                     </p>
                 </RevealSection>
 
