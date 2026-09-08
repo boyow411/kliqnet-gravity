@@ -40,5 +40,14 @@
     4
   ],
   "productionDependencyVulnerabilities": 0,
-  "authenticatedAdminBrowser": "not tested; existing owner account preserved"
+  "authenticatedAdminBrowser": "not tested; existing owner account preserved",
+  "hostedVerification": {
+    "deployment": "dpl_7MoSFVyrskmiwQaseVfoXH5tkGUa",
+    "applicationSha": "112cb4694199cbb72fa090bfd5efccf3fdb695c0",
+    "state": "READY",
+    "home": "passed, no broken images, canonical correct",
+    "enquiry": "KN-000005 saved and confirmed in database; own QA row removed",
+    "portfolio": "17 projects rendered",
+    "productionDomain": "confirmed unchanged at 722cdfaf0663dacab1f834b962195df06bc6db7d"
+  }
 }
