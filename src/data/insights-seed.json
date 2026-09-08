@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "a-restaurant-website-is-a-guest-journey",
+    "title": "A restaurant website is a guest journey",
+    "excerpt": "What ESQ and Wazobia show about connecting the first impression to menus, occasions and a useful booking route.",
+    "content": "A restaurant website has to answer a series of practical questions. What kind of evening is this? What can I eat? Can my group come? How do I arrange it? Strong visual design helps, but the journey has to carry that information all the way through.\n## Design around the occasion\nThe ESQ website presents dining, brunch, events and private hire as distinct starting points. Someone planning a birthday needs different information from someone choosing dinner tonight. Making those paths visible helps the guest recognise where to begin.\n## Let the menu do its job\nA useful menu supports browsing by category, readable dish descriptions and current prices. It should also make service and allergy information easy to find. The ESQ project connects those needs in a dedicated menu experience.\n## Make the next step truthful\nA request is different from a confirmed reservation. Wazobia Old Kent Road\u2019s delivered preview provides phone and email routes while its final domain and reservation infrastructure are prepared. The website should say what will happen when a guest acts.\n## Keep the operational details editable\nMenus, events and opening arrangements change. Agree who updates them and where the authoritative record lives before launch. A polished page loses value quickly when the information behind it becomes stale.\nThe lesson for a hospitality brief is simple: define the guest\u2019s next action and the team\u2019s next action together. That connection is where a website becomes part of running the venue.",
+    "category": "Hospitality",
+    "coverImage": "/projects/esq/current-home.webp",
+    "authorName": "Kliqnet Digital",
+    "authorRole": "Studio notes",
+    "readingTime": "3 min read",
+    "published": true,
+    "date": "2026-09-08",
+    "relatedSlugs": "from-ai-generation-to-creative-workflow,build-the-operating-workflow-first"
+  },
+  {
+    "slug": "from-ai-generation-to-creative-workflow",
+    "title": "The useful part of AI is the workflow around it",
+    "excerpt": "CineKliq\u2019s planning, scene and review journeys show why generating a file is only one part of creative production.",
+    "content": "An image or video generation button can make an impressive demonstration. A useful creative product also needs to help someone prepare the brief, find the result, judge it and move it into the next stage of production.\n## Start before the prompt\nCineKliq\u2019s scene-planning workspace connects individual shots to a wider project. A sequence needs context: which character appears, what happens next and what the frame needs to communicate. Keeping that context near the generation controls reduces repeated explanation.\n## Give every output a home\nGenerated files need an identifiable project and a visible state. A person should be able to return later and find the asset without reconstructing the original session. An organised library matters as much as the first successful generation.\n## Keep review explicit\nA completed generation is not automatically ready to publish. CineKliq\u2019s review experience lets a person inspect an output before moving it forward. The distinction is useful for campaign work, storytelling and any workflow with an approval step.\n## Account for incomplete work\nProviders can fail, return an unsuitable result or take longer than expected. The product needs a recovery path and a clear account of what the user spent. Those behaviours belong in the scope of an AI feature from the beginning.\nCineKliq is part of Kliqnet\u2019s product portfolio. Its case study describes the build and current rollout stage, with public application captures that show planning and review in context.",
+    "category": "Product thinking",
+    "coverImage": "/projects/cinekliq/storyboard.webp",
+    "authorName": "Kliqnet Digital",
+    "authorRole": "Studio notes",
+    "readingTime": "3 min read",
+    "published": true,
+    "date": "2026-09-08",
+    "relatedSlugs": "a-restaurant-website-is-a-guest-journey,build-the-operating-workflow-first"
+  },
+  {
+    "slug": "build-the-operating-workflow-first",
+    "title": "Before adding features, connect the operating workflow",
+    "excerpt": "A practical way to scope business software, informed by ROTDULE, KliqPOS and Signoff360.",
+    "content": "A long feature list can hide a weak handoff. A rota might exist without a dependable attendance record. A booking might appear without reaching the team who need to prepare for it. An uploaded document might sit in a folder without an owner for its review.\n## Follow one job from start to finish\nBegin with a specific operational task. For workforce software, that could be planning a shift, recording what happened and preparing an approved record for payroll. ROTDULE\u2019s product direction connects those stages in one working week.\n## Put responsibility beside status\nA label such as \u201cpending\u201d is only useful if someone knows what happens next. Identify the person or role who can act, what evidence they need and what changes after their decision. This is a central consideration in care operations and workforce systems.\n## Separate shared software from shared data\nA platform can serve multiple businesses while each organisation keeps its own records and configuration. Permissions and organisation boundaries need to be part of the underlying design, including reports, background work and external integrations.\n## Define release evidence\nAgree a small set of complete workflows that demonstrate the release is usable. Include the less comfortable cases: a rejected request, a missing document, a provider failure or a duplicate submission. A launch checklist should reflect what people actually need to do.\nKliqnet\u2019s operational products cover different industries. The shared principle is to build a clear path from an event to a record, a responsible person and the next action.",
+    "category": "Engineering",
+    "coverImage": "/projects/rotdule/website.webp",
+    "authorName": "Kliqnet Digital",
+    "authorRole": "Studio notes",
+    "readingTime": "3 min read",
+    "published": true,
+    "date": "2026-09-08",
+    "relatedSlugs": "a-restaurant-website-is-a-guest-journey,from-ai-generation-to-creative-workflow"
+  }
+]

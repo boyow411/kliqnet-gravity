@@ -1,90 +1,75 @@
 import { NextRequest, NextResponse } from "next/server";
 import { db } from "@/db";
 import { projectCaseStudies } from "@/db/schema";
-import { eq, desc, like, or, count } from "drizzle-orm";
+import { and, desc, eq, ilike, or, count } from "drizzle-orm";
 import { withAuth } from "@/modules/auth/rbac";
-
+import { portfolioSchema } from "@/lib/portfolio-types";
 export const GET = withAuth(
-    async (request: NextRequest) => {
-        try {
-            const { searchParams } = new URL(request.url);
-            const search = searchParams.get("search") || "";
-            const category = searchParams.get("category") || "";
-            const page = parseInt(searchParams.get("page") || "1");
-            const limit = parseInt(searchParams.get("limit") || "20");
-            const offset = (page - 1) * limit;
-
-            const conditions = [];
-            if (search) {
-                conditions.push(
-                    or(
-                        like(projectCaseStudies.name, `%${search}%`),
-                        like(projectCaseStudies.slug, `%${search}%`)
-                    )
-                );
-            }
-            if (category) {
-                conditions.push(eq(projectCaseStudies.category, category));
-            }
-
-            const whereClause = conditions.length > 0
-                ? conditions.reduce((a, b) => (a && b ? or(a, b)! : a || b!))
-                : undefined;
-
-            const projects = whereClause
-                ? await db.select().from(projectCaseStudies).where(whereClause).orderBy(desc(projectCaseStudies.createdAt)).limit(limit).offset(offset)
-                : await db.select().from(projectCaseStudies).orderBy(desc(projectCaseStudies.createdAt)).limit(limit).offset(offset);
-
-            const [totalResult] = whereClause
-                ? await db.select({ count: count() }).from(projectCaseStudies).where(whereClause)
-                : await db.select({ count: count() }).from(projectCaseStudies);
-
-            return NextResponse.json({
-                projects,
-                total: totalResult.count,
-                page,
-                totalPages: Math.ceil(totalResult.count / limit),
-            });
-        } catch (error) {
-            console.error("Projects list error:", error);
-            return NextResponse.json({ projects: [], total: 0, page: 1, totalPages: 0 });
-        }
-    },
-    { permissions: ["manage:projects"] }
+  async (request: NextRequest) => {
+    try {
+      const q = new URL(request.url).searchParams;
+      const page = Math.max(1, Math.min(10000, Number(q.get("page")) || 1));
+      const limit = Math.max(1, Math.min(100, Number(q.get("limit")) || 20));
+      const search = (q.get("search") || "").slice(0, 150);
+      const category = q.get("category");
+      const where = and(
+        search
+          ? or(
+              ilike(projectCaseStudies.name, `%${search}%`),
+              ilike(projectCaseStudies.slug, `%${search}%`),
+            )
+          : undefined,
+        category ? eq(projectCaseStudies.category, category) : undefined,
+      );
+      const [projects, [total]] = await Promise.all([
+        db
+          .select()
+          .from(projectCaseStudies)
+          .where(where)
+          .orderBy(desc(projectCaseStudies.createdAt))
+          .limit(limit)
+          .offset((page - 1) * limit),
+        db.select({ count: count() }).from(projectCaseStudies).where(where),
+      ]);
+      return NextResponse.json({
+        projects,
+        total: total.count,
+        page,
+        totalPages: Math.ceil(total.count / limit),
+      });
+    } catch {
+      return NextResponse.json(
+        { error: "Could not load projects." },
+        { status: 503 },
+      );
+    }
+  },
+  { permissions: ["manage:projects"] },
 );
-
 export const POST = withAuth(
-    async (request: NextRequest) => {
-        try {
-            const body = await request.json();
-            const {
-                slug, name, category, industryTags, status, tagline,
-                shortDescription, primaryUrl, data, featured, published,
-            } = body;
-
-            if (!slug || !name || !category || !status || !tagline || !shortDescription) {
-                return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
-            }
-
-            const [newProject] = await db.insert(projectCaseStudies).values({
-                slug,
-                name,
-                category,
-                industryTags: industryTags || "",
-                status,
-                tagline,
-                shortDescription,
-                primaryUrl: primaryUrl || "",
-                data: data || {},
-                featured: featured ?? false,
-                published: published ?? true,
-            }).returning();
-
-            return NextResponse.json(newProject, { status: 201 });
-        } catch (error) {
-            console.error("Project create error:", error);
-            return NextResponse.json({ error: "Failed to create project" }, { status: 500 });
-        }
-    },
-    { permissions: ["manage:projects"] }
+  async (request: NextRequest) => {
+    try {
+      const parsed = portfolioSchema.safeParse(await request.json());
+      if (!parsed.success)
+        return NextResponse.json(
+          {
+            error: parsed.error.issues
+              .map((i) => i.path.join(".") + ": " + i.message)
+              .join("; "),
+          },
+          { status: 400 },
+        );
+      const [project] = await db
+        .insert(projectCaseStudies)
+        .values(parsed.data)
+        .returning();
+      return NextResponse.json(project, { status: 201 });
+    } catch {
+      return NextResponse.json(
+        { error: "Could not create project. Check that the slug is unique." },
+        { status: 400 },
+      );
+    }
+  },
+  { permissions: ["manage:projects"] },
 );

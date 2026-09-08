@@ -1,89 +1,75 @@
 "use client";
-
 import Link from "next/link";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import { Logo } from "@/components/ui/logo";
-import { motion, AnimatePresence } from "framer-motion";
-
-const navLinks = [
-    { href: "/services", label: "Services" },
-    { href: "/projects", label: "Projects" },
-    { href: "/about", label: "About" },
-    { href: "/blog", label: "Blog" },
+const links = [
+  ["Work & products", "/projects"],
+  ["Services", "/services"],
+  ["About", "/about"],
+  ["Insights", "/blog"],
 ];
-
 export function Navbar() {
-    const [isOpen, setIsOpen] = useState(false);
-
-    return (
-        <nav className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
-            <div className="max-w-5xl mx-auto rounded-2xl border border-white/[0.08] bg-black/60 backdrop-blur-xl">
-                <div className="relative flex items-center justify-between h-14 px-6">
-                    {/* Logo */}
-                    {/* Logo */}
-                    <Logo />
-
-                    {/* Desktop Nav — centered absolutely */}
-                    <div className="hidden md:flex items-center gap-8 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                        {navLinks.map((link) => (
-                            <Link
-                                key={link.href}
-                                href={link.href}
-                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors"
-                            >
-                                {link.label}
-                            </Link>
-                        ))}
-                    </div>
-
-                    {/* Book a Call — right side */}
-                    <div className="hidden md:block">
-                        <Button variant="primary" size="sm" asChild>
-                            <Link href="/book-a-call">Book a Call</Link>
-                        </Button>
-                    </div>
-
-                    {/* Mobile Menu Toggle */}
-                    <button
-                        className="md:hidden text-gray-400 hover:text-white"
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        {isOpen ? <X size={22} /> : <Menu size={22} />}
-                    </button>
-                </div>
-
-                {/* Mobile Nav */}
-                <AnimatePresence>
-                    {isOpen && (
-                        <motion.div
-                            initial={{ opacity: 0, height: 0 }}
-                            animate={{ opacity: 1, height: "auto" }}
-                            exit={{ opacity: 0, height: 0 }}
-                            className="md:hidden border-t border-white/[0.08] overflow-hidden"
-                        >
-                            <div className="flex flex-col gap-4 p-6">
-                                {navLinks.map((link) => (
-                                    <Link
-                                        key={link.href}
-                                        href={link.href}
-                                        onClick={() => setIsOpen(false)}
-                                        className="text-lg font-medium text-gray-300 hover:text-white"
-                                    >
-                                        {link.label}
-                                    </Link>
-                                ))}
-                                <Button asChild className="w-full mt-4">
-                                    <Link href="/book-a-call" onClick={() => setIsOpen(false)}>
-                                        Book a Call
-                                    </Link>
-                                </Button>
-                            </div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-            </div>
-        </nav>
-    );
+  const [open, setOpen] = useState(false);
+  const path = usePathname();
+  const toggle = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    if (!open) return;
+    const close = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        toggle.current?.focus();
+      }
+    };
+    document.addEventListener("keydown", close);
+    return () => document.removeEventListener("keydown", close);
+  }, [open]);
+  return (
+    <header className="site-header">
+      <a className="skip-link" href="#main-content">
+        Skip to content
+      </a>
+      <nav aria-label="Main navigation" className="container nav-inner">
+        <Logo />
+        <div className="desktop-nav">
+          {links.map(([label, href]) => (
+            <Link
+              key={href}
+              href={href}
+              aria-current={path === href ? "page" : undefined}
+            >
+              {label}
+            </Link>
+          ))}
+        </div>
+        <Link className="nav-cta" href="/contact">
+          Start a project <ArrowUpRight size={16} />
+        </Link>
+        <button
+          ref={toggle}
+          className="menu-toggle"
+          type="button"
+          aria-label={open ? "Close navigation" : "Open navigation"}
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? <X /> : <Menu />}
+        </button>
+      </nav>
+      {open && (
+        <div id="mobile-navigation" className="mobile-nav">
+          {links.map(([label, href]) => (
+            <Link key={href} href={href} onClick={() => setOpen(false)}>
+              {label}
+            </Link>
+          ))}
+          <Link href="/contact" onClick={() => setOpen(false)}>
+            Start a project <ArrowUpRight size={18} />
+          </Link>
+        </div>
+      )}
+    </header>
+  );
 }

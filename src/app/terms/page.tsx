@@ -1,87 +1,58 @@
-import type { Metadata } from "next";
 import Link from "next/link";
-
-export const metadata: Metadata = {
-  title: "Terms of Service | Kliqnet Digital",
-  description: "Terms of service placeholder for Kliqnet Digital while the final legal copy is prepared.",
+import { site } from "@/lib/site";
+export const metadata = {
+  title: "Website terms | Kliqnet Digital",
+  description:
+    "Website use, project enquiries and the scope of portfolio examples.",
+  alternates: { canonical: "/terms" },
 };
-
-const termsSections = [
-  {
-    title: "Website use",
-    body: "The Kliqnet Digital website is provided for general information about our services, projects and ways to contact us. Do not misuse the website, interfere with its security or attempt unauthorised access.",
-  },
-  {
-    title: "Project enquiries",
-    body: "Submitting an enquiry or booking a call does not create a client relationship, guarantee availability or confirm pricing. Scope, timings, deliverables and fees are agreed separately in writing.",
-  },
-  {
-    title: "Services and deliverables",
-    body: "Any design, development, automation, AI or growth work is governed by the proposal, statement of work or agreement accepted for that project. Those project terms take priority over this general website page.",
-  },
-  {
-    title: "Content and intellectual property",
-    body: "Kliqnet Digital branding, website content, designs, copy and project materials shown on this website remain the property of Kliqnet Digital or the relevant rights holder unless agreed otherwise.",
-  },
-  {
-    title: "No guarantees",
-    body: "We aim to build practical, high-quality systems, but website content and examples are not a promise of identical commercial results. Outcomes depend on scope, market, operations, traffic and many external factors.",
-  },
-];
-
 export default function TermsPage() {
   return (
-    <section className="min-h-screen bg-black text-white pt-32 pb-24">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto max-w-3xl">
-          <span className="inline-block text-[11px] font-semibold tracking-[0.2em] uppercase text-gray-500 mb-5">
-            Legal
-          </span>
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
-            Terms of Service
-          </h1>
-          <p className="text-gray-400 text-lg leading-relaxed mb-4">
-            This page is a practical placeholder while Kliqnet Digital prepares its final legal copy. It keeps the footer legal links live and sets out basic website-use terms.
-          </p>
-          <p className="text-sm text-gray-600 mb-12">
-            Last updated: 26 May 2026
-          </p>
-
-          <div className="space-y-6">
-            {termsSections.map((section) => (
-              <div
-                key={section.title}
-                className="rounded-2xl border border-white/[0.08] bg-white/[0.03] p-6"
-              >
-                <h2 className="text-xl font-semibold mb-3">{section.title}</h2>
-                <p className="text-gray-400 leading-relaxed">{section.body}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 rounded-2xl border border-blue-500/20 bg-blue-500/[0.06] p-6">
-            <h2 className="text-xl font-semibold mb-3">Questions</h2>
-            <p className="text-gray-400 leading-relaxed">
-              For service terms, proposals or project-specific agreements, contact hello@kliqnet.com and we will point you to the right document.
-            </p>
-          </div>
-
-          <div className="mt-10 flex flex-col sm:flex-row gap-3">
-            <Link
-              href="/book-a-call"
-              className="inline-flex items-center justify-center rounded-lg bg-white px-6 py-3 font-medium text-black hover:bg-gray-200 transition-colors"
-            >
-              Book a Free Strategy Call
-            </Link>
-            <Link
-              href="/privacy"
-              className="inline-flex items-center justify-center rounded-lg border border-white/[0.12] px-6 py-3 font-medium text-white hover:bg-white/[0.06] transition-colors"
-            >
-              View Privacy Policy
-            </Link>
-          </div>
-        </div>
-      </div>
-    </section>
+    <article className="agency container legal-copy section">
+      <p className="eyebrow">Website terms · Updated 8 September 2026</p>
+      <h1>A clear starting point.</h1>
+      <h2>Using this website</h2>
+      <p>
+        This website describes Kliqnet Digital’s services, products and project
+        work. Please do not misuse it, interfere with its operation or attempt
+        unauthorised access to private accounts or records.
+      </p>
+      <h2>Enquiries and call requests</h2>
+      <p>
+        Sending an enquiry or requesting a call does not confirm a booking,
+        project availability, price or delivery date. We agree scope, fees,
+        timings, ownership and support separately in the proposal or project
+        agreement.
+      </p>
+      <h2>Project agreements</h2>
+      <p>
+        Services and deliverables are governed by the written agreement for that
+        project. Those terms take priority for the work they cover. Third-party
+        subscriptions, provider fees, domains and ongoing support are included
+        only where the scope says so.
+      </p>
+      <h2>Our work and other people’s work</h2>
+      <p>
+        Branding, designs and project materials belong to Kliqnet Digital or the
+        relevant rights holder. The portfolio includes Kliqnet products and work
+        for businesses and brands, with the relationship and stage described on
+        each case study.
+      </p>
+      <h2>Examples and availability</h2>
+      <p>
+        Case studies describe particular work and design decisions. They do not
+        promise identical commercial results for another business. Product
+        features and availability can change; check the linked product website
+        or speak with us before relying on an example for a purchase decision.
+      </p>
+      <h2>Contact</h2>
+      <p>
+        For questions about these terms or a project agreement, email{" "}
+        <a href={"mailto:" + site.email}>{site.email}</a>.
+      </p>
+      <Link className="text-link" href="/privacy">
+        Privacy notice →
+      </Link>
+    </article>
   );
 }
