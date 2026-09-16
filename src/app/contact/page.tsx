@@ -1,25 +1,46 @@
 import { MultiStepForm } from "@/components/forms/multi-step-form";
-
+import { site } from "@/lib/site";
 export const metadata = {
-    title: "Start a Project | Kliqnet Digital",
-    description: "Tell us about your project. Get a tailored strategy call and proposal within 24 hours.",
+  title: "Start a Project | Kliqnet Digital",
+  description:
+    "Tell Kliqnet what you want to build or improve. Start a conversation about your website, software or operations.",
+  alternates: { canonical: "/contact" },
 };
-
-export default function ContactPage() {
-    return (
-        <div className="pt-32 pb-20 min-h-screen bg-black text-white">
-            <div className="container mx-auto px-4">
-                <div className="text-center max-w-2xl mx-auto mb-12">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
-                        Let&apos;s Build Something Great
-                    </h1>
-                    <p className="text-lg text-gray-400">
-                        Answer a few quick questions so we can understand your needs and prepare a tailored proposal.
-                    </p>
-                </div>
-
-                <MultiStepForm />
-            </div>
+export default async function Contact({
+  searchParams,
+}: {
+  searchParams: Promise<{ project?: string }>;
+}) {
+  const { project } = await searchParams;
+  return (
+    <div className="agency page-top">
+      <div className="container enquiry-layout">
+        <div className="enquiry-aside">
+          <p className="eyebrow">A good place to start</p>
+          <h1>
+            Tell us what
+            <br />
+            comes <em>next.</em>
+          </h1>
+          <p>
+            A new idea, an existing product, or a business process that needs to
+            work better. Give us a little context and we’ll help shape the next
+            step.
+          </p>
+          <p>No finished specification needed.</p>
+          <a href={`mailto:${site.email}`} className="text-link">
+            {site.email}
+          </a>
+          <div className="mt-10">
+            <p className="eyebrow">What happens next</p>
+            <p>
+              We review your brief, come back with any questions, and agree
+              whether a discovery conversation is the right next step.
+            </p>
+          </div>
         </div>
-    );
+        <MultiStepForm project={(project || "").slice(0, 160)} />
+      </div>
+    </div>
+  );
 }

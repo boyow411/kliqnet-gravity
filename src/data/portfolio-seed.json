@@ -1,0 +1,965 @@
+[
+  {
+    "slug": "paytrack",
+    "name": "PayTrack",
+    "category": "Venture Studio",
+    "tagline": "Payroll infrastructure built for modern teams.",
+    "shortDescription": "A payroll and workforce management platform designed to simplify salary processing and compliance.",
+    "primaryUrl": "https://www.paytrackpro.com/",
+    "industryTags": "Fintech, Payroll, SaaS",
+    "status": "Delivered",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/paytrack/paytrack.jpg",
+      "coverCaption": "PayTrack website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/paytrack/paytract1.jpg"
+      ],
+      "captions": [
+        "A further view of the PayTrack website presentation."
+      ],
+      "sector": "Business software",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "This case study describes the delivered design and development scope. The product website provides current availability.",
+      "problem": "Payroll work involves more than a salary figure. Teams need a clear way to organise workforce information, review calculations and understand reporting without losing financial detail.",
+      "contribution": [
+        "Designed full product architecture",
+        "Built admin payroll dashboard",
+        "Implemented subscription-based billing logic",
+        "Developed marketing website",
+        "Created user authentication & role permissions"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Defined clear product roadmap and feature prioritisation"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Designed clean, compliance-focused UX flows"
+        }
+      ],
+      "outcome": "A payroll and workforce application covering employee records, salary preparation and reporting in one workspace.",
+      "decision": "Balancing simplicity with financial accuracy. Designed structured calculation modules with clean UI separation.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 30,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "tracct",
+    "name": "Tracct",
+    "category": "Venture Studio",
+    "tagline": "Financial clarity for SMEs.",
+    "shortDescription": "An SME financial tracking platform providing expense management and reporting dashboards.",
+    "primaryUrl": "https://www.tracct.com/",
+    "industryTags": "Fintech, SME, Analytics",
+    "status": "Delivered",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/tracct/tracct1.jpg",
+      "coverCaption": "Tracct website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/tracct/tracct2.jpg"
+      ],
+      "captions": [
+        "A further view of the Tracct website presentation."
+      ],
+      "sector": "Business software",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "This case study describes the delivered design and development scope. The product website provides current availability.",
+      "problem": "Small businesses need a readable view of financial activity. The product needed to organise transactions and reporting without burying the useful information in a crowded dashboard.",
+      "contribution": [
+        "Designed dashboard analytics system",
+        "Built secure authentication model",
+        "Structured modular financial reporting system",
+        "Developed marketing funnel"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Mapped SME pain points around financial clarity"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Built modular reporting widgets"
+        }
+      ],
+      "outcome": "A financial tracking application that brings expense records and reporting dashboards together for small businesses.",
+      "decision": "Avoiding dashboard clutter. Implemented structured card-based analytics layout.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 31,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "veediogram",
+    "name": "Veediogram",
+    "category": "Venture Studio",
+    "tagline": "AI-powered long-form video creation.",
+    "shortDescription": "A modular AI video generation platform designed for chunk-based production workflows.",
+    "primaryUrl": "https://www.veediogram.com",
+    "industryTags": "AI, Video, Automation",
+    "status": "Delivered",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/veediogram/veediogram1.jpg",
+      "coverCaption": "Veediogram website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/veediogram/veediogram2.jpg"
+      ],
+      "captions": [
+        "A further view of the Veediogram website presentation."
+      ],
+      "sector": "Creative & community",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "This case study describes the delivered design and development scope. The product website provides current availability.",
+      "problem": "Longer AI video projects involve multiple generation tasks and outputs. The challenge was to give creators a coherent production journey while individual jobs run in the background.",
+      "contribution": [
+        "Architected chunk-based rendering system",
+        "Built user prompt interface",
+        "Developed job processing backend",
+        "Implemented subscription model"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Designed asynchronous rendering architecture"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Structured task queues for video jobs"
+        }
+      ],
+      "outcome": "An earlier video-generation build exploring modular production and the organisation of generated video segments.",
+      "decision": "Managing long rendering tasks. Implemented modular chunk processing.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 32,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "mailvara",
+    "name": "Mailvara",
+    "category": "Venture Studio",
+    "tagline": "Email automation built for modern teams.",
+    "shortDescription": "An AI-enhanced email marketing platform with visual builders and automation flows.",
+    "primaryUrl": "https://www.mailvara.tech/",
+    "industryTags": "Email Marketing, Automation, AI",
+    "status": "Delivered",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/mailvara/Mailvara.jpg",
+      "coverCaption": "Mailvara website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/mailvara/mailvara1.jpg"
+      ],
+      "captions": [
+        "A further view of the Mailvara website presentation."
+      ],
+      "sector": "Business software",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "This case study describes the delivered design and development scope. The product website provides current availability.",
+      "problem": "Creating email campaigns and automations can become a collection of disconnected tasks. Mailvara brings the builder, audience-facing forms and workflow setup into a single product structure.",
+      "contribution": [
+        "Built visual email builder",
+        "Developed form builder",
+        "Implemented automation flows",
+        "Integrated Stripe subscription billing"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Structured modular block system"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Designed intuitive workflow editor"
+        }
+      ],
+      "outcome": "An email marketing application combining campaign composition, contact records and automation flow design.",
+      "decision": "Ensuring builder flexibility without complexity. Developed reusable content blocks.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 33,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "cuereq",
+    "name": "CueReq",
+    "category": "Venture Studio",
+    "tagline": "Real-time music request platform.",
+    "shortDescription": "A real-time system connecting guests and DJs inside venues.",
+    "primaryUrl": "https://www.cuereq.com/",
+    "industryTags": "Hospitality Tech, Real-Time Systems",
+    "status": "Delivered",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/cuereq/cuereq1.jpg",
+      "coverCaption": "CueReq website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/cuereq/cuereq2.jpg"
+      ],
+      "captions": [
+        "A further view of the CueReq website presentation."
+      ],
+      "sector": "Hospitality",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "This case study describes the delivered design and development scope. The product website provides current availability.",
+      "problem": "Guests want to request music while DJs need control over what gets played. The product needed separate, simple journeys for making a request and managing the queue.",
+      "contribution": [
+        "Designed dual-app architecture",
+        "Built moderation system",
+        "Implemented monetisation logic"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Structured event-driven backend"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Optimised for low-latency interactions"
+        }
+      ],
+      "outcome": "A venue interaction application that connects guest song requests with a DJ-facing queue.",
+      "decision": "Ensuring stable real-time communication. Implemented event-based server architecture.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 34,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "monika-restaurant",
+    "name": "Monika Restaurant",
+    "category": "Client Transformation",
+    "tagline": "AI-enhanced restaurant website redesign.",
+    "shortDescription": "Full website redesign with AI receptionist integration.",
+    "primaryUrl": "https://monikarestaurants.com/",
+    "industryTags": "Hospitality, Website Redesign, AI Chatbot",
+    "status": "Delivered",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/monika/monika1.jpg",
+      "coverCaption": "Monika Restaurant website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/monika/monika2.jpg"
+      ],
+      "captions": [
+        "A further view of the Monika Restaurant website presentation."
+      ],
+      "sector": "Hospitality",
+      "relationship": "Website design and development for the business",
+      "stageNote": "Website design and development delivered for the business.",
+      "problem": "A restaurant website needs to communicate the venue clearly and make the next step easy. This project focused on modernising the presentation and making menus, enquiries and bookings easier to navigate.",
+      "contribution": [
+        "Redesigned layout and structure",
+        "Integrated AI chatbot",
+        "Optimised booking flow"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Mapped customer journey"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Improved visual hierarchy"
+        }
+      ],
+      "outcome": "A restaurant website bringing the venue’s presentation, dining information and enquiry entry points together.",
+      "decision": "Improving engagement without overwhelming users. Introduced conversational AI strategically.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 35,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "shnc",
+    "name": "Safehands Nursing Care",
+    "category": "Client Transformation",
+    "tagline": "A care journey that starts with the person.",
+    "shortDescription": "A person-centred healthcare website connecting service information, individual goals and enquiries.",
+    "primaryUrl": "https://www.shnc.org.uk/",
+    "industryTags": "Healthcare, Lead Generation",
+    "status": "Live",
+    "featured": true,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/shnc/current-home.webp",
+      "coverCaption": "Safehands Nursing Care public homepage, captured September 2026.",
+      "screenshots": [
+        "/projects/shnc/goals.webp",
+        "/projects/shnc/shnc1.jpg"
+      ],
+      "captions": [
+        "The Your Goals page starts with what matters to the person and family.",
+        "Earlier project view: the site’s service and information presentation."
+      ],
+      "sector": "Healthcare",
+      "relationship": "A healthcare business in the founder’s operating portfolio",
+      "stageNote": "Public healthcare website. SHNC Clinical Academy and Signoff360 are separate products.",
+      "problem": "Families and professionals need to understand complex care without losing sight of the person receiving it. The website needed to explain the service clearly and help visitors express their own priorities.",
+      "contribution": [
+        "Service and audience information architecture",
+        "The Your Goals journey and enquiry design",
+        "Responsive website design and development",
+        "Resource and brochure presentation"
+      ],
+      "workflow": [
+        {
+          "title": "Understand the support",
+          "text": "Families and professionals can explore the service and who it is designed for."
+        },
+        {
+          "title": "Start with personal goals",
+          "text": "The Your Goals page makes space for independence, reassurance and everyday priorities."
+        },
+        {
+          "title": "Begin a conversation",
+          "text": "The enquiry journey connects those priorities with contact details for the team."
+        }
+      ],
+      "outcome": "A public website that connects clinical service information with an individual’s priorities, giving families and referrers a clearer starting point for a conversation.",
+      "decision": "Goals come before contact details. This gives the enquiry a human context and helps the team understand what the person wants care to make possible.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 5,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "esq",
+    "name": "ESQ Resto Lounge",
+    "category": "Client Transformation",
+    "tagline": "The venue experience, carried through to the booking.",
+    "shortDescription": "A hospitality website connecting atmosphere, menus, events and a guided booking journey.",
+    "primaryUrl": "https://esqgrill.com/",
+    "industryTags": "Hospitality, Brand, Bookings",
+    "status": "Live",
+    "featured": true,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/esq/current-home.webp",
+      "coverCaption": "ESQ Resto Lounge public homepage, captured September 2026.",
+      "screenshots": [
+        "/projects/esq/current-home.webp",
+        "/projects/esq/menu.webp"
+      ],
+      "captions": [
+        "The current ESQ public website, introducing dining and experiences.",
+        "The live food menu: category navigation, dish details, prices and service information. Prices shown reflect the capture date."
+      ],
+      "sector": "Hospitality",
+      "relationship": "A hospitality business in the founder’s operating portfolio",
+      "stageNote": "Public website. The ESQ website and KliqPOS are separate projects with distinct responsibilities.",
+      "problem": "ESQ needs its website to support the way guests discover the venue: food, drinks, events and occasions. The challenge was to connect that atmosphere with practical menus and an understandable booking journey.",
+      "contribution": [
+        "Website experience and visual direction",
+        "Menu and event presentation",
+        "Booking journey and supporting content"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Aligned web structure with nightlife brand tone"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Focused on conversion-first UX"
+        }
+      ],
+      "outcome": "A coherent guest-facing website brings the venue, food and drink, events and booking entry points into one experience.",
+      "decision": "The site needs both atmosphere and practical information. Venue imagery leads the experience, while menus and booking entry points remain direct and visible.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 2,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "aidesk",
+    "name": "AIDesk",
+    "category": "Venture Studio",
+    "tagline": "Your AI receptionist — never miss a call, booking, or lead.",
+    "shortDescription": "An all-in-one AI-powered platform helping local businesses manage customers, automate tasks, and grow revenue.",
+    "primaryUrl": "https://aidesk-gravity.vercel.app/",
+    "industryTags": "AI, Local Business, SaaS, Automation",
+    "status": "In Development",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/AIDesk/aidesk.jpg",
+      "coverCaption": "AIDesk website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/AIDesk/aidesk1.jpg"
+      ],
+      "captions": [
+        "A further view of the AIDesk website presentation."
+      ],
+      "sector": "Business software",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Product development. Channel availability and operational setup depend on the intended business and provider configuration.",
+      "problem": "Local businesses receive enquiries across channels while trying to run their day. AIDesk explores how reception, customer records and follow-up can work together in one application.",
+      "contribution": [
+        "Built AI receptionist with natural-language conversation handling",
+        "Developed smart booking system with availability management and calendar sync",
+        "Implemented unified inbox aggregating SMS, email, and live chat",
+        "Created CRM with automatic contact enrichment and audience segmentation",
+        "Built automation engine for welcome messages, follow-ups, and review requests",
+        "Designed funnel builder for landing pages and lead capture",
+        "Developed real-time analytics dashboard"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Designed conversational AI pipeline for human-like customer interactions"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Built event-driven automation engine with configurable triggers"
+        }
+      ],
+      "outcome": "A product design and application structure connecting reception, customer records, booking and follow-up. Further rollout depends on the selected communication providers and business configuration.",
+      "decision": "Making AI conversations feel natural and context-aware. Designed a multi-turn conversation engine with context retention and fallback routing.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 38,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "veralley",
+    "name": "Veralley",
+    "category": "Venture Studio",
+    "tagline": "Experience Scripture like never before.",
+    "shortDescription": "An AI-powered faith platform with personalised devotionals, Bible study tools, trivia battles, and community circles.",
+    "primaryUrl": "https://www.veralley.com/",
+    "industryTags": "FaithTech, AI, Mobile App, Community",
+    "status": "Delivered",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/Veralley/veralley.jpg",
+      "coverCaption": "Veralley website presentation from the delivered project.",
+      "screenshots": [
+        "/projects/Veralley/veralley1.jpg"
+      ],
+      "captions": [
+        "A further view of the Veralley website presentation."
+      ],
+      "sector": "Creative & community",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Mobile-first progressive web application. This case study does not represent a native app-store release.",
+      "problem": "Digital faith resources can feel fragmented. Veralley brings reading, study, personal devotion and community into a mobile-friendly product journey.",
+      "contribution": [
+        "Built AI Bible companion with three integrated AI engines",
+        "Developed smart Bible reader with listen, highlight, and note features",
+        "Created mood-based devotional generator",
+        "Implemented trivia arena for interactive Bible learning",
+        "Built WWJD scenario simulation engine",
+        "Designed faith circles for community engagement",
+        "Developed streak and gamification system"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Designed personalised AI pipelines for devotional and study content"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Built mobile-first PWA architecture for cross-platform access"
+        }
+      ],
+      "outcome": "A faith and community application combining devotional content, study tools and shared activities.",
+      "decision": "Generating contextually accurate AI devotionals from Scripture. Developed structured prompt engineering with verse-level validation and mood-context mapping.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 39,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "signoff360",
+    "name": "Signoff360",
+    "category": "Venture Studio",
+    "tagline": "Workforce evidence, with a clearer next step.",
+    "shortDescription": "A care-workforce platform bringing records, training and competency review into connected workflows.",
+    "primaryUrl": "https://www.signoff360.com/",
+    "industryTags": "Healthcare, Compliance, SaaS, HR Tech",
+    "status": "Live",
+    "featured": true,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/Signoff360/current-home.webp",
+      "coverCaption": "Signoff360 public product overview, captured September 2026.",
+      "screenshots": [
+        "/projects/Signoff360/signoff360-1.jpg"
+      ],
+      "captions": [
+        "A further view of the Signoff360 website presentation."
+      ],
+      "sector": "Healthcare",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Workforce software supporting evidence management and review. Regulatory decisions remain with the responsible provider and professionals.",
+      "problem": "Care teams need to see workforce records, training and competency evidence in context. The platform brings these workflows together so managers can review what is complete, what needs attention and who can take the next step.",
+      "contribution": [
+        "Workforce record and onboarding workflows",
+        "Training and competency review interfaces",
+        "Role-aware access and organisation boundaries",
+        "Audit history and document renewal visibility"
+      ],
+      "workflow": [
+        {
+          "title": "Define the journey",
+          "text": "Mapped CQC inspection requirements into digital compliance rules"
+        },
+        {
+          "title": "Shape the experience",
+          "text": "Designed automated alerting for document expirations and renewals"
+        }
+      ],
+      "outcome": "Connected workflows for reviewing workforce evidence, training and competency records. The product supports the provider’s governance work without claiming to guarantee an inspection outcome.",
+      "decision": "Workforce evidence needs context and accountability. Organisation boundaries, roles and review history are part of the product design, rather than being treated as separate administrative concerns.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 1,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "cinekliq",
+    "name": "CineKliq",
+    "category": "Venture Studio",
+    "industryTags": "Creative & community",
+    "status": "Pilot",
+    "tagline": "From the first idea to a connected creative production.",
+    "shortDescription": "An AI creative production studio for images, video, storyboards and review.",
+    "primaryUrl": "https://cinekliq.com",
+    "featured": true,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/cinekliq/storyboard.webp",
+      "coverCaption": "CineKliq’s scene-planning workspace, showing a Farrah & Raffah demonstration storyboard. Public product capture.",
+      "screenshots": [
+        "/projects/cinekliq/storyboard.webp",
+        "/projects/cinekliq/image-studio.webp",
+        "/projects/cinekliq/review.webp"
+      ],
+      "captions": [
+        "Scene planning with individual frames, production state and review actions. Demonstration project.",
+        "Image Studio showing an ESQ campaign test asset, its generation controls and onward workflow. Historical test artwork; not a current promotion.",
+        "The review workflow in a staging demonstration: inspect a generated video before approving it for editing."
+      ],
+      "sector": "Creative & community",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Active product development and controlled use. Model availability, narration and final rendering depend on the enabled production setup.",
+      "problem": "Creative production can become fragmented across prompts, assets, generation tools and feedback. CineKliq connects those steps around a project, so the brief and the decisions remain with the work.",
+      "contribution": [
+        "Product strategy and studio experience",
+        "AI-assisted planning and generation workflows",
+        "Project assets, storyboards and review interfaces",
+        "Usage accounting and generation-job handling"
+      ],
+      "workflow": [
+        {
+          "title": "Shape the brief",
+          "text": "An agent helps turn a rough idea into a production plan and proposed generation route."
+        },
+        {
+          "title": "Create in context",
+          "text": "Images and video outputs belong to the project alongside references and the working brief."
+        },
+        {
+          "title": "Review the work",
+          "text": "Storyboards and review states help organise the next creative decision."
+        }
+      ],
+      "outcome": "A connected creative workspace spanning planning, generation, assets and review. The public showcase includes real application captures and creative outputs.",
+      "decision": "Generation can take time and consume credits. Job status, cost visibility and approval are designed into the journey so users can understand what is happening.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 0,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "kliqpos",
+    "name": "KliqPOS",
+    "category": "Venture Studio",
+    "industryTags": "Hospitality",
+    "status": "Pilot",
+    "tagline": "The till, the tables and the team. Connected.",
+    "shortDescription": "A point-of-sale and venue operations platform for hospitality and retail.",
+    "primaryUrl": "https://www.kliqpos.com",
+    "featured": true,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/kliqpos/website.webp",
+      "coverCaption": "KliqPOS public website overview, captured September 2026.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Hospitality",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Live pilot at ESQ. Payment-reader and printing integrations require configuration for each venue.",
+      "problem": "A busy venue needs bookings, tables, orders, payments and fulfilment to agree with each other. KliqPOS brings those operational steps into a single application with distinct staff responsibilities.",
+      "contribution": [
+        "Touch-friendly POS and venue workflows",
+        "Bookings, deposits and table management",
+        "Kitchen and bar ticket routing",
+        "Tenant boundaries, staff roles and reporting"
+      ],
+      "workflow": [
+        {
+          "title": "Run the floor",
+          "text": "A venue workspace connects tables, products and open orders."
+        },
+        {
+          "title": "Coordinate service",
+          "text": "Orders can be routed to the relevant kitchen or bar workflow."
+        },
+        {
+          "title": "Reconcile the day",
+          "text": "Payment and operational records provide a basis for review and reporting."
+        }
+      ],
+      "outcome": "A venue operations platform with a live ESQ pilot identified on the product website. The scope connects guest-facing bookings with service and reporting.",
+      "decision": "Venues share a product, not their data. Tenant configuration and staff permissions keep operational responsibilities specific to each business.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 3,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "rotdule",
+    "name": "ROTDULE",
+    "category": "Venture Studio",
+    "industryTags": "Business software",
+    "status": "Live",
+    "tagline": "Make the working week easier to run.",
+    "shortDescription": "Workforce scheduling, time records, leave and payroll preparation in one operational system.",
+    "primaryUrl": "https://www.rotdule.com",
+    "featured": true,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/rotdule/website.webp",
+      "coverCaption": "ROTDULE public website overview, captured September 2026.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Business software",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "In operational use. This case study describes the workforce system; it does not claim measured time savings or replace payroll advice.",
+      "problem": "Scheduling is connected to attendance, leave and payroll preparation. ROTDULE gives teams one way to manage these records while preserving the history behind changes and approvals.",
+      "contribution": [
+        "Rota and workforce workflows",
+        "Time-record review and leave management",
+        "Payroll preparation and approval controls",
+        "Multi-organisation access and operational history"
+      ],
+      "workflow": [
+        {
+          "title": "Plan the week",
+          "text": "Build and publish rotas with staff assignments and conflict checks."
+        },
+        {
+          "title": "Review time",
+          "text": "Managers review attendance, breaks and exceptions before approval."
+        },
+        {
+          "title": "Prepare payroll",
+          "text": "Approved records support reconciliation and controlled pay-period snapshots."
+        }
+      ],
+      "outcome": "An operational workforce platform, with use at ESQ described on the product website. It connects the working week to the records needed for payroll preparation.",
+      "decision": "The product is industry-agnostic. Working hours, roles and policies belong to each organisation’s configuration, so one venue’s way of working does not become everyone’s default.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 4,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "skeduda",
+    "name": "Skeduda",
+    "category": "Venture Studio",
+    "industryTags": "Creative & community",
+    "status": "Pilot",
+    "tagline": "A clearer path from content idea to publication.",
+    "shortDescription": "A social planning, publishing and customer-messaging product.",
+    "primaryUrl": "https://skeduda.com",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/skeduda/website.webp",
+      "coverCaption": "Skeduda’s public website. Its hero uses a product-vision illustration; the image is not a capture of a customer account.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Creative & community",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Controlled rollout. Public channel access and messaging capabilities depend on provider approvals and account setup.",
+      "problem": "Social content work spans brand context, assets, drafts, schedules and publishing outcomes. Skeduda connects those records so teams can understand what is planned and what happened next.",
+      "contribution": [
+        "Brand profiles and content workspaces",
+        "Media, drafts and scheduling workflows",
+        "Provider integrations and publication history",
+        "Organisation-scoped customer messaging"
+      ],
+      "workflow": [
+        {
+          "title": "Plan with context",
+          "text": "Brand information and media sit alongside the content draft."
+        },
+        {
+          "title": "Prepare publication",
+          "text": "Channel and schedule choices are connected to the intended account."
+        },
+        {
+          "title": "Follow the outcome",
+          "text": "Publication status and history help teams identify the next action."
+        }
+      ],
+      "outcome": "A product foundation connecting content planning, publication records and supported messaging workflows, with controlled provider rollout.",
+      "decision": "A scheduled item and a published post are different states. The application tracks provider outcomes rather than treating a successful submission as proof of publication.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 15,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "wazobia-old-kent-road",
+    "name": "Wazobia · Old Kent Road",
+    "category": "Client Transformation",
+    "industryTags": "Hospitality",
+    "status": "Delivered",
+    "tagline": "A restaurant website built around the menu and the visit.",
+    "shortDescription": "An independent hospitality redesign with a detailed menu and clear reservation enquiry routes.",
+    "primaryUrl": "https://wazobia-old-kent-road.vercel.app",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/wazobia-old-kent-road/website-20260916.webp",
+      "coverCaption": "The current Wazobia Old Kent Road homepage, captured 16 September 2026, with its new wordmark and full-screen food photography.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Hospitality",
+      "relationship": "Website design and development for Wazobia Old Kent Road",
+      "stageNote": "Website preview delivered. Domain cutover and online reservation infrastructure remain launch work.",
+      "problem": "The restaurant needed a clear, engaging presentation of the venue and its extensive food and drinks offer, with practical ways for guests to plan their visit.",
+      "contribution": [
+        "Independent website redesign",
+        "Searchable food and drinks menu",
+        "Responsive guest information and booking enquiries",
+        "Preview deployment and launch preparation"
+      ],
+      "workflow": [
+        {
+          "title": "Explore the venue",
+          "text": "Photography and practical information introduce the restaurant."
+        },
+        {
+          "title": "Find the right dish",
+          "text": "Menu categories and search help guests browse the offer."
+        },
+        {
+          "title": "Ask about a booking",
+          "text": "Phone and email routes let guests request a reservation for confirmation by the venue."
+        }
+      ],
+      "outcome": "A deployed website preview with menu browsing and phone/email booking routes. Domain launch and server-based reservation delivery are separate activation work.",
+      "decision": "The reservation journey needs to say what actually happens. A guest request remains subject to the restaurant’s confirmation.",
+      "evidenceDate": "2026-09-16",
+      "featuredOrder": 20,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "kliqcare",
+    "name": "KliqCare",
+    "category": "Venture Studio",
+    "industryTags": "Healthcare",
+    "status": "In Development",
+    "tagline": "A clearer start for applicants and care teams.",
+    "shortDescription": "A recruitment and onboarding product foundation for healthcare organisations.",
+    "primaryUrl": "https://kliqcare.vercel.app",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/kliqcare/website.webp",
+      "coverCaption": "KliqCare’s controlled-beta website, with an illustrative applicant progress preview.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Healthcare",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Product foundation in development. Full authentication, persistent workflows and operational integrations are later phases.",
+      "problem": "Applicants need to know what to complete next, while recruitment teams need a clear view of progress. KliqCare explores both sides of that journey within an organisation-scoped product.",
+      "contribution": [
+        "Applicant and administrator experience design",
+        "Recruitment pipeline and onboarding interface",
+        "Application-draft recovery",
+        "Organisation-scoped data architecture"
+      ],
+      "workflow": [
+        {
+          "title": "See the next step",
+          "text": "An applicant dashboard makes progress and remaining tasks visible."
+        },
+        {
+          "title": "Build the application",
+          "text": "The application journey supports draft progress and field-level guidance."
+        },
+        {
+          "title": "Review the pipeline",
+          "text": "An administrator view brings applicants and their status together."
+        }
+      ],
+      "outcome": "A runnable product foundation demonstrating applicant and administrator journeys. Further implementation is needed for the complete operational service.",
+      "decision": "Progress should remain understandable to the applicant and the team. The foundation separates their responsibilities while connecting them through the application journey.",
+      "evidenceDate": "2026-09-08",
+      "featuredOrder": 24,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "crate-companion",
+    "name": "Crate Companion",
+    "category": "Venture Studio",
+    "industryTags": "Creative & community",
+    "status": "Pilot",
+    "tagline": "Your music. Ready for the room.",
+    "shortDescription": "A Mac workspace for DJs to organise, review and prepare local music and video libraries for Serato.",
+    "primaryUrl": "",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/crate-companion/website-20260916.webp",
+      "coverCaption": "Crate Companion’s Mac collection workspace, captured from the installed development build. Pilot interface.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Creative & community",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "A working personal Mac pilot. Public distribution, notarisation and commercial packaging are not yet available.",
+      "problem": "A large DJ library can spread preparation across folders, playlists and specialist tools. Crate Companion brings the collection, track review and preparation decisions into one workspace while respecting the DJ’s existing work.",
+      "contribution": [
+        "Native Mac application and collection workspace",
+        "Local audio and video library scanning",
+        "BPM, key, genre and cue review workflows",
+        "Crate organisation and set planning",
+        "Prepared-copy export with preview and backup safeguards"
+      ],
+      "workflow": [
+        {
+          "title": "Find the right tracks",
+          "text": "Browse the collection and crates, then build a focused preparation queue."
+        },
+        {
+          "title": "Review before applying",
+          "text": "Inspect analysis and suggestions, with manual control over preparation decisions."
+        },
+        {
+          "title": "Prepare for the room",
+          "text": "Plan sets and export prepared copies, preserving original media and existing DJ work."
+        }
+      ],
+      "outcome": "An installed Mac pilot that brings collection browsing, preparation and set planning together. Analysis and export remain reviewable; this is not a public download release.",
+      "decision": "Automation should support the DJ’s judgement. Original files and existing preparation are protected, with review and backups around changes.",
+      "evidenceDate": "2026-09-16",
+      "featuredOrder": 8,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "homeskolar",
+    "name": "Homeskolar",
+    "category": "Venture Studio",
+    "industryTags": "Education",
+    "status": "Pilot",
+    "tagline": "A thoughtful learning home for curious minds.",
+    "shortDescription": "A private family learning platform connecting parent planning, guided activities and visible progress.",
+    "primaryUrl": "https://homeskolar.com",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/homeskolar/website-20260916.webp",
+      "coverCaption": "Homeskolar’s public website, captured 16 September 2026. Family records and children’s work are not shown.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Education",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Private family pilot, with public registration closed. Curriculum expansion and educational review are ongoing; child-facing AI is not enabled.",
+      "problem": "Home learning needs both a useful structure for parents and an encouraging experience for children. Homeskolar brings planning, guided learning and progress records into a family workspace designed around those different responsibilities.",
+      "contribution": [
+        "Public brand and responsive website",
+        "Parent-owned family profiles and controlled child access",
+        "Guided activity and saved-progress journeys",
+        "Weekly planning and parent progress records",
+        "Private pilot access and separation of family data"
+      ],
+      "workflow": [
+        {
+          "title": "Plan the learning week",
+          "text": "Parents organise the family’s learning rhythm and select appropriate activities."
+        },
+        {
+          "title": "Take the next small step",
+          "text": "Guided activity steps help learners work through a task and resume saved progress."
+        },
+        {
+          "title": "See the progress",
+          "text": "Parents review completed work and progress records to inform what comes next."
+        }
+      ],
+      "outcome": "A deployed public website and a protected family pilot. The wider annual curriculum is still being developed and reviewed; the platform is not open for general enrolment.",
+      "decision": "Parent control and manageable learning steps come first. Pilot access allows the experience and content to be refined before wider availability.",
+      "evidenceDate": "2026-09-16",
+      "featuredOrder": 9,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "enzi",
+    "name": "ENZI",
+    "category": "Client Transformation",
+    "industryTags": "Hospitality",
+    "status": "Delivered",
+    "tagline": "A new era of African dining.",
+    "shortDescription": "A distinctive website for a forthcoming Pan-African dining and social destination in Hendon, London.",
+    "primaryUrl": "https://enzi-restaurant-ten.vercel.app",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/enzi/website-20260916.webp",
+      "coverCaption": "ENZI’s website preview, captured 16 September 2026. The hero shows a dining-room design concept for the forthcoming venue.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Hospitality",
+      "relationship": "Website design and development for ENZI",
+      "stageNote": "Website preview delivered for a forthcoming Hendon venue. Live reservations and operational integrations remain disabled pending launch readiness.",
+      "problem": "A new restaurant needs to communicate its atmosphere before guests arrive. ENZI needed a recognisable digital identity and clear journeys through dining, experiences, celebrations and practical visit information.",
+      "contribution": [
+        "Independent ENZI website and visual identity implementation",
+        "Editorial dining and venue storytelling",
+        "Responsive experiences and celebration journeys",
+        "Reservation interface prepared for staged launch",
+        "Preview deployment and launch configuration"
+      ],
+      "workflow": [
+        {
+          "title": "Discover the setting",
+          "text": "An atmospheric introduction establishes the ENZI identity and its Hendon location."
+        },
+        {
+          "title": "Explore the occasion",
+          "text": "Dining, experiences and celebrations help guests understand the different reasons to visit."
+        },
+        {
+          "title": "Prepare for launch",
+          "text": "The reservation experience is developed in preview while live booking stays gated."
+        }
+      ],
+      "outcome": "A deployed, responsive website preview supporting ENZI’s pre-opening presentation. This case study describes the website work, not an operational restaurant booking launch.",
+      "decision": "Pre-opening storytelling must distinguish the venue vision from an open service. Design-concept imagery is identified and booking activation remains a separate operational step.",
+      "evidenceDate": "2026-09-16",
+      "featuredOrder": 10,
+      "technologies": []
+    }
+  }
+]

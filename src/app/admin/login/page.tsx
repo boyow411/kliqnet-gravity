@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
+import { Logo } from "@/components/ui/logo";
 import { Loader2 } from "lucide-react";
 
 export default function AdminLoginPage() {
@@ -17,17 +18,17 @@ export default function AdminLoginPage() {
         setError("");
         setLoading(true);
 
-        const result = await signIn("credentials", {
-            email,
-            password,
-            redirect: false,
-        });
-
-        if (result?.error) {
-            setError("Invalid email or password.");
+        try {
+            const result = await signIn("credentials", { email, password, redirect: false });
+            if (!result?.ok || result.error) {
+                setError("Unable to sign in. Check your email and password, then try again.");
+            } else {
+                router.replace("/admin");
+            }
+        } catch {
+            setError("We could not connect. Please try again.");
+        } finally {
             setLoading(false);
-        } else {
-            router.push("/admin");
         }
     }
 
@@ -36,9 +37,7 @@ export default function AdminLoginPage() {
             <div className="w-full max-w-sm">
                 {/* Brand */}
                 <div className="text-center mb-8">
-                    <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-lg text-white mx-auto mb-4">
-                        K
-                    </div>
+                    <Logo className="mb-5" />
                     <h1 className="text-2xl font-bold text-white tracking-tight">
                         Admin Login
                     </h1>
@@ -50,16 +49,18 @@ export default function AdminLoginPage() {
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-4">
                     {error && (
-                        <div className="bg-red-500/10 border border-red-500/20 text-red-400 text-sm px-4 py-3 rounded-lg">
+                        <div role="alert" className="bg-red-500/10 border border-red-500/20 text-red-400 text-sm px-4 py-3 rounded-lg">
                             {error}
                         </div>
                     )}
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-300 mb-1.5">
+                        <label htmlFor="admin-email" className="block text-sm font-medium text-gray-300 mb-1.5">
                             Email
                         </label>
                         <input
+                            id="admin-email"
+                            autoComplete="username"
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -70,10 +71,12 @@ export default function AdminLoginPage() {
                     </div>
 
                     <div>
-                        <label className="block text-sm font-medium text-gray-300 mb-1.5">
+                        <label htmlFor="admin-password" className="block text-sm font-medium text-gray-300 mb-1.5">
                             Password
                         </label>
                         <input
+                            id="admin-password"
+                            autoComplete="current-password"
                             type="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}

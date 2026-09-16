@@ -1,0 +1,171 @@
+{
+  "results": [
+    {
+      "path": "/",
+      "status": 200
+    },
+    {
+      "path": "/about",
+      "status": 200
+    },
+    {
+      "path": "/services",
+      "status": 200
+    },
+    {
+      "path": "/projects",
+      "status": 200
+    },
+    {
+      "path": "/contact",
+      "status": 200
+    },
+    {
+      "path": "/book-a-call",
+      "status": 200
+    },
+    {
+      "path": "/blog",
+      "status": 200
+    },
+    {
+      "path": "/privacy",
+      "status": 200
+    },
+    {
+      "path": "/terms",
+      "status": 200
+    },
+    {
+      "path": "/web-development",
+      "status": 200
+    },
+    {
+      "path": "/saas-development",
+      "status": 200
+    },
+    {
+      "path": "/automation",
+      "status": 200
+    },
+    {
+      "path": "/ai-integration",
+      "status": 200
+    },
+    {
+      "path": "/crm-operations",
+      "status": 200
+    },
+    {
+      "path": "/app-development",
+      "status": 200
+    },
+    {
+      "path": "/mobile-app-development",
+      "status": 200
+    },
+    {
+      "path": "/digital-marketing",
+      "status": 200
+    },
+    {
+      "path": "/projects/paytrack",
+      "status": 200
+    },
+    {
+      "path": "/projects/tracct",
+      "status": 200
+    },
+    {
+      "path": "/projects/veediogram",
+      "status": 200
+    },
+    {
+      "path": "/projects/mailvara",
+      "status": 200
+    },
+    {
+      "path": "/projects/cuereq",
+      "status": 200
+    },
+    {
+      "path": "/projects/monika-restaurant",
+      "status": 200
+    },
+    {
+      "path": "/projects/shnc",
+      "status": 200
+    },
+    {
+      "path": "/projects/esq",
+      "status": 200
+    },
+    {
+      "path": "/projects/aidesk",
+      "status": 200
+    },
+    {
+      "path": "/projects/veralley",
+      "status": 200
+    },
+    {
+      "path": "/projects/signoff360",
+      "status": 200
+    },
+    {
+      "path": "/projects/cinekliq",
+      "status": 200
+    },
+    {
+      "path": "/projects/kliqpos",
+      "status": 200
+    },
+    {
+      "path": "/projects/rotdule",
+      "status": 200
+    },
+    {
+      "path": "/projects/skeduda",
+      "status": 200
+    },
+    {
+      "path": "/projects/wazobia-old-kent-road",
+      "status": 200
+    },
+    {
+      "path": "/projects/kliqcare",
+      "status": 200
+    },
+    {
+      "path": "/blog/a-restaurant-website-is-a-guest-journey",
+      "status": 200
+    },
+    {
+      "path": "/blog/from-ai-generation-to-creative-workflow",
+      "status": 200
+    },
+    {
+      "path": "/blog/build-the-operating-workflow-first",
+      "status": 200
+    },
+    {
+      "path": "/work",
+      "status": 308,
+      "target": "/projects"
+    },
+    {
+      "path": "/work/esq-cocktail-bar",
+      "status": 308,
+      "target": "/projects/esq"
+    },
+    {
+      "path": "/blog/seo-in-2026",
+      "status": 308,
+      "target": "/blog/a-restaurant-website-is-a-guest-journey"
+    }
+  ],
+  "missingProject": 404,
+  "sitemapProjects": 17,
+  "robots": true,
+  "shareImage": true
+}

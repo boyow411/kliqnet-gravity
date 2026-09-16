@@ -1,28 +1,55 @@
-import { blogPosts } from "@/lib/blog-posts";
-import { BlogList } from "@/components/blog/blog-list";
-
+import Link from "next/link";
+import Image from "next/image";
+import { getPublicPosts } from "@/lib/blog-posts";
+import { ContactBand } from "@/components/marketing";
+export const dynamic = "force-dynamic";
 export const metadata = {
-    title: "Insights & Articles | Kliqnet Digital",
-    description: "Thoughts on technology, design, and growth from the Kliqnet Digital team.",
+  title: "Studio notes | Kliqnet Digital",
+  description:
+    "Practical lessons from building websites, creative tools and business systems.",
+  alternates: { canonical: "/blog" },
 };
-
-export default function BlogPage() {
-    return (
-        <div className="pt-32 pb-20 min-h-screen bg-black text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-900/20 via-black to-black">
-            <div className="container mx-auto px-4">
-                <div className="max-w-4xl mx-auto text-center mb-16">
-                    <h1 className="text-5xl md:text-7xl font-bold mb-6 tracking-tight bg-clip-text text-transparent bg-gradient-to-b from-white to-white/50">
-                        Insights
-                    </h1>
-                    <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                        Deep dives into scalable architecture, design systems, and digital strategy.
-                    </p>
-                </div>
-
-                <div className="max-w-7xl mx-auto">
-                    <BlogList posts={blogPosts} />
-                </div>
-            </div>
+export default async function Insights() {
+  const posts = await getPublicPosts();
+  return (
+    <div className="agency">
+      <section className="container intro page-top">
+        <p className="eyebrow">Studio notes</p>
+        <h1>
+          Thinking from
+          <br />
+          the work.
+        </h1>
+        <p>
+          Practical lessons from the websites, products and business systems we
+          build.
+        </p>
+      </section>
+      <section className="container section">
+        <div className="work-grid">
+          {posts.map((p) => (
+            <article className="work-card" key={p.slug}>
+              <Link className="work-image" href={"/blog/" + p.slug}>
+                <Image
+                  src={p.coverImage}
+                  alt={p.title}
+                  fill
+                  sizes="(max-width:640px) 100vw,50vw"
+                  className="object-cover object-top"
+                />
+              </Link>
+              <p className="eyebrow mt-5">
+                {p.category} · {p.readingTime}
+              </p>
+              <Link href={"/blog/" + p.slug} className="work-title">
+                <h2 className="text-2xl">{p.title}</h2>
+              </Link>
+              <p>{p.excerpt}</p>
+            </article>
+          ))}
         </div>
-    );
+      </section>
+      <ContactBand />
+    </div>
+  );
 }
