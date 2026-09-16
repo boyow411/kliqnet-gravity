@@ -40,7 +40,7 @@ export default function RootLayout({
             url: site.url,
             email: site.email,
             founder: { "@type": "Person", name: site.founder },
-            logo: site.url + "/kliqnet-logo.png",
+            logo: site.url + "/brand/avatar.png",
           }}
         />
         <SiteMeasurement />

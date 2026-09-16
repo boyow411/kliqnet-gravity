@@ -30,7 +30,7 @@ export const getPublicPosts = cache(async (): Promise<BlogPost[]> => {
       r.readingTime ||
       `${Math.max(1, Math.ceil(r.content.split(/\s+/).length / 200))} min read`,
     category: r.category,
-    coverImage: r.coverImage || "/kliqnet-logo.png",
+    coverImage: r.coverImage || "/brand/avatar.png",
     author: { name: r.authorName, role: r.authorRole },
     relatedSlugs: (r.relatedSlugs || "")
       .split(",")

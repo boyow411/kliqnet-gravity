@@ -42,6 +42,7 @@ export function Footer() {
           <div>
             <Link href="/privacy">Privacy</Link>
             <Link href="/terms">Terms</Link>
+            <Link href="/brand">Brand assets</Link>
           </div>
           <span>Built with purpose. By Kliqnet.</span>
         </div>

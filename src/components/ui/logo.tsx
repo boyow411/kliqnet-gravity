@@ -12,22 +12,20 @@ export function Logo({ className, variant = "full" }: LogoProps) {
     <Link
       href="/"
       aria-label="Kliqnet Digital home"
-      className={cn("flex items-center gap-2 group", className)}
+      className={cn("inline-flex shrink-0 items-center rounded-sm", className)}
     >
-      <div className="relative w-8 h-8 flex-shrink-0 rounded bg-slate-100">
-        <Image
-          src="/kliqnet-logo-transparent.png"
-          alt=""
-          fill
-          className="object-contain p-1"
-          sizes="32px"
-        />
-      </div>
-      {variant === "full" && (
-        <span className="text-xl font-bold tracking-tighter text-white">
-          Kliqnet<span className="text-blue-500">.</span>
-        </span>
-      )}
+      <Image
+        src={
+          variant === "icon" ? "/brand/avatar.svg" : "/brand/logo-on-dark.svg"
+        }
+        alt=""
+        width={variant === "icon" ? 40 : 184}
+        height={variant === "icon" ? 40 : 50}
+        className={
+          variant === "icon" ? "h-10 w-10" : "h-auto w-[168px] sm:w-[184px]"
+        }
+        unoptimized
+      />
     </Link>
   );
 }
