@@ -1,3 +1,4 @@
+import { MotionStudio } from "@/components/cinematic/MotionStudio";
 import { SiteMeasurement } from "@/components/site-measurement";
 import { JsonLd } from "@/components/json-ld";
 import { site } from "@/lib/site";
@@ -43,12 +44,14 @@ export default function RootLayout({
             logo: site.url + "/brand/avatar.png",
           }}
         />
+        <MotionStudio>
         <SiteMeasurement />
         <Navbar />
         <main id="main-content" className="flex-1" tabIndex={-1}>
           {children}
         </main>
         <Footer />
+        </MotionStudio>
       </body>
     </html>
   );

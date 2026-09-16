@@ -10,7 +10,7 @@ export function PortfolioCard({
   priority?: boolean;
 }) {
   return (
-    <article className="work-card">
+    <article className="work-card cinema-card">
       <Link
         href={`/projects/${project.slug}`}
         className="work-image"
@@ -20,10 +20,11 @@ export function PortfolioCard({
           src={project.data.coverImage}
           alt={project.data.coverCaption}
           fill
-          sizes="(max-width: 760px) 100vw, 50vw"
+          sizes="(max-width: 760px) 100vw, 65vw"
           className="object-cover object-top"
           priority={priority}
         />
+        <span className="work-image-label">Explore project</span>
         <span className="work-image-arrow">
           <ArrowUpRight size={22} />
         </span>

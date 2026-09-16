@@ -41,7 +41,8 @@ export default async function Project({
     .filter((r) => r.slug !== slug && r.data.sector === d.sector)
     .slice(0, 2);
   return (
-    <div className="agency page-top">
+    <div className="agency page-top cinema-case">
+      <div className="case-atmosphere" aria-hidden="true"><Image src={d.coverImage} alt="" fill sizes="100vw" /></div>
       <JsonLd
         data={{
           "@context": "https://schema.org",

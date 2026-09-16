@@ -75,7 +75,7 @@ export function PortfolioExplorer({
         {sector !== "All sectors" ? " · " + sector : ""}
       </p>
       {filtered.length ? (
-        <div className="work-grid">
+        <div className="work-grid cinema-grid">
           {filtered.map((p, i) => (
             <PortfolioCard key={p.slug} project={p} priority={i < 2} />
           ))}
