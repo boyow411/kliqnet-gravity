@@ -33,3 +33,17 @@ Review the entire result before encoding it: dark space for the headline,
 stable geometry, no unexpected text, no flashes, and continuity across stages.
 Check forward and reverse scrolling, chapter buttons, motion off, and a narrow
 mobile viewport against the actual final video.
+
+## Release checks
+
+Production once restored a build cache that emitted an older global stylesheet
+alongside the current hero JavaScript. The video loaded, but the stage and film
+both had `position: static`, leaving the video above the headline. A preview of
+the same commit contained the correct CSS, so video readiness alone was not a
+sufficient production check.
+
+Production builds now disable Turbopack's persistent build cache. After compilation,
+`check-cinematic-build.mjs` checks the CSS referenced by the homepage and portfolio
+manifests for their required cinematic selectors. Missing styles fail the build.
+During live verification, also check computed layout (`sticky` stage, `absolute`
+film), visible headline and actions, chapter seeking, and mobile layout.
