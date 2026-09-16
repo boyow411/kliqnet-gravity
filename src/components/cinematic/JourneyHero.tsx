@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-motion";
 import { ArrowDown, ArrowUpRight } from "lucide-react";
 import { useQuietMotion } from "./MotionStudio";
+import { JourneyFilm } from "./JourneyFilm";
 const chapters = [
   { name: "The challenge", title: "You bring the challenge.", accent: "We build what comes next.", text: "A website. A product. A better way of working. It starts with what you need.", image: "01-challenge" },
   { name: "The conversation", title: "First, we listen.", accent: "Then, it becomes clear.", text: "Your ambition. Your customers. The things getting in the way. Together, we shape the right brief.", image: "02-conversation" },
@@ -33,6 +34,7 @@ export function JourneyHero() {
         {chapters.map((scene, index) => <div className={`journey-image ${index === current ? "is-active" : ""}`} key={scene.image}>
           <Image src={`/cinematic/${scene.image}.webp`} alt="" fill sizes="100vw" priority={index === 0} loading={index === 0 ? undefined : "lazy"} />
         </div>)}
+        {!quiet && <JourneyFilm progress={scrollYProgress} />}
       </motion.div>
       <div className="journey-scrim" />
       <div className="journey-top container"><span>Independent digital agency & product studio</span><span>London · Beyond borders</span></div>
