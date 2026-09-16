@@ -24,6 +24,7 @@ export function Logo({ className, variant = "full" }: LogoProps) {
         className={
           variant === "icon" ? "h-10 w-10" : "h-auto w-[168px] sm:w-[184px]"
         }
+        priority
         unoptimized
       />
     </Link>

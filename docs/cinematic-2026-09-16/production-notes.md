@@ -31,3 +31,5 @@ Agency content and boundary checks pass for 20 projects. Security regression che
 ## Provider blocker
 
 Kie playground rejected Seedance 2.0 and MiniMax Hailuo 2.3 Standard at 1080P with: `The API key is not authorized to use this model.` No generated video result was returned. The output panels still showed the providers’ sample clips; these were not downloaded or used. Owner asked to enable one preferred model. No key permissions, secrets, billing or top-up settings changed. The site currently uses the five generated stills with native-scroll transitions.
+
+Additional browser checks: services/about/contact have no horizontal overflow at 390px; no enquiry submitted. Desktop 1280x720 revealed a hero CTA/chapter overlap, corrected with compact-height typography and spacing. Chapters 4 and 5 verified; CTA bottom 566px, chapter controls top 602px. Logo now preloads to avoid an initially blank header. A no-JavaScript text-flow fallback is included. Five source PNGs and original Image Gen requests are archived in the task workspace under cinematic-production-2026-09-16.
