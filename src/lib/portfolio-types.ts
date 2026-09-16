@@ -28,6 +28,7 @@ export const storySchema = z
       "Hospitality",
       "Business software",
       "Creative & community",
+      "Education",
     ]),
     relationship: z.string().min(3).max(160),
     stageNote: z.string().min(3).max(800),

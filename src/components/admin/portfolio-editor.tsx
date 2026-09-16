@@ -189,6 +189,7 @@ export function PortfolioEditor({ id }: { id?: string }) {
                 "Hospitality",
                 "Business software",
                 "Creative & community",
+                "Education",
               ].map((v) => (
                 <option key={v}>{v}</option>
               ))}

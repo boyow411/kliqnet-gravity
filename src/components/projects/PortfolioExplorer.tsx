@@ -8,6 +8,7 @@ const sectors = [
   "Hospitality",
   "Business software",
   "Creative & community",
+  "Education",
 ];
 export function PortfolioExplorer({
   projects,

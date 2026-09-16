@@ -736,8 +736,8 @@
     "featured": false,
     "published": true,
     "data": {
-      "coverImage": "/projects/wazobia-old-kent-road/website.webp",
-      "coverCaption": "Wazobia · Old Kent Road public website overview, captured September 2026.",
+      "coverImage": "/projects/wazobia-old-kent-road/website-20260916.webp",
+      "coverCaption": "The current Wazobia Old Kent Road homepage, captured 16 September 2026, with its new wordmark and full-screen food photography.",
       "screenshots": [],
       "captions": [],
       "sector": "Hospitality",
@@ -766,7 +766,7 @@
       ],
       "outcome": "A deployed website preview with menu browsing and phone/email booking routes. Domain launch and server-based reservation delivery are separate activation work.",
       "decision": "The reservation journey needs to say what actually happens. A guest request remains subject to the restaurant’s confirmation.",
-      "evidenceDate": "2026-09-08",
+      "evidenceDate": "2026-09-16",
       "featuredOrder": 20,
       "technologies": []
     }
@@ -815,6 +815,150 @@
       "decision": "Progress should remain understandable to the applicant and the team. The foundation separates their responsibilities while connecting them through the application journey.",
       "evidenceDate": "2026-09-08",
       "featuredOrder": 24,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "crate-companion",
+    "name": "Crate Companion",
+    "category": "Venture Studio",
+    "industryTags": "Creative & community",
+    "status": "Pilot",
+    "tagline": "Your music. Ready for the room.",
+    "shortDescription": "A Mac workspace for DJs to organise, review and prepare local music and video libraries for Serato.",
+    "primaryUrl": "",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/crate-companion/website-20260916.webp",
+      "coverCaption": "Crate Companion’s Mac collection workspace, captured from the installed development build. Pilot interface.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Creative & community",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "A working personal Mac pilot. Public distribution, notarisation and commercial packaging are not yet available.",
+      "problem": "A large DJ library can spread preparation across folders, playlists and specialist tools. Crate Companion brings the collection, track review and preparation decisions into one workspace while respecting the DJ’s existing work.",
+      "contribution": [
+        "Native Mac application and collection workspace",
+        "Local audio and video library scanning",
+        "BPM, key, genre and cue review workflows",
+        "Crate organisation and set planning",
+        "Prepared-copy export with preview and backup safeguards"
+      ],
+      "workflow": [
+        {
+          "title": "Find the right tracks",
+          "text": "Browse the collection and crates, then build a focused preparation queue."
+        },
+        {
+          "title": "Review before applying",
+          "text": "Inspect analysis and suggestions, with manual control over preparation decisions."
+        },
+        {
+          "title": "Prepare for the room",
+          "text": "Plan sets and export prepared copies, preserving original media and existing DJ work."
+        }
+      ],
+      "outcome": "An installed Mac pilot that brings collection browsing, preparation and set planning together. Analysis and export remain reviewable; this is not a public download release.",
+      "decision": "Automation should support the DJ’s judgement. Original files and existing preparation are protected, with review and backups around changes.",
+      "evidenceDate": "2026-09-16",
+      "featuredOrder": 8,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "homeskolar",
+    "name": "Homeskolar",
+    "category": "Venture Studio",
+    "industryTags": "Education",
+    "status": "Pilot",
+    "tagline": "A thoughtful learning home for curious minds.",
+    "shortDescription": "A private family learning platform connecting parent planning, guided activities and visible progress.",
+    "primaryUrl": "https://homeskolar.com",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/homeskolar/website-20260916.webp",
+      "coverCaption": "Homeskolar’s public website, captured 16 September 2026. Family records and children’s work are not shown.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Education",
+      "relationship": "Developed within the Kliqnet product portfolio",
+      "stageNote": "Private family pilot, with public registration closed. Curriculum expansion and educational review are ongoing; child-facing AI is not enabled.",
+      "problem": "Home learning needs both a useful structure for parents and an encouraging experience for children. Homeskolar brings planning, guided learning and progress records into a family workspace designed around those different responsibilities.",
+      "contribution": [
+        "Public brand and responsive website",
+        "Parent-owned family profiles and controlled child access",
+        "Guided activity and saved-progress journeys",
+        "Weekly planning and parent progress records",
+        "Private pilot access and separation of family data"
+      ],
+      "workflow": [
+        {
+          "title": "Plan the learning week",
+          "text": "Parents organise the family’s learning rhythm and select appropriate activities."
+        },
+        {
+          "title": "Take the next small step",
+          "text": "Guided activity steps help learners work through a task and resume saved progress."
+        },
+        {
+          "title": "See the progress",
+          "text": "Parents review completed work and progress records to inform what comes next."
+        }
+      ],
+      "outcome": "A deployed public website and a protected family pilot. The wider annual curriculum is still being developed and reviewed; the platform is not open for general enrolment.",
+      "decision": "Parent control and manageable learning steps come first. Pilot access allows the experience and content to be refined before wider availability.",
+      "evidenceDate": "2026-09-16",
+      "featuredOrder": 9,
+      "technologies": []
+    }
+  },
+  {
+    "slug": "enzi",
+    "name": "ENZI",
+    "category": "Client Transformation",
+    "industryTags": "Hospitality",
+    "status": "Delivered",
+    "tagline": "A new era of African dining.",
+    "shortDescription": "A distinctive website for a forthcoming Pan-African dining and social destination in Hendon, London.",
+    "primaryUrl": "https://enzi-restaurant-ten.vercel.app",
+    "featured": false,
+    "published": true,
+    "data": {
+      "coverImage": "/projects/enzi/website-20260916.webp",
+      "coverCaption": "ENZI’s website preview, captured 16 September 2026. The hero shows a dining-room design concept for the forthcoming venue.",
+      "screenshots": [],
+      "captions": [],
+      "sector": "Hospitality",
+      "relationship": "Website design and development for ENZI",
+      "stageNote": "Website preview delivered for a forthcoming Hendon venue. Live reservations and operational integrations remain disabled pending launch readiness.",
+      "problem": "A new restaurant needs to communicate its atmosphere before guests arrive. ENZI needed a recognisable digital identity and clear journeys through dining, experiences, celebrations and practical visit information.",
+      "contribution": [
+        "Independent ENZI website and visual identity implementation",
+        "Editorial dining and venue storytelling",
+        "Responsive experiences and celebration journeys",
+        "Reservation interface prepared for staged launch",
+        "Preview deployment and launch configuration"
+      ],
+      "workflow": [
+        {
+          "title": "Discover the setting",
+          "text": "An atmospheric introduction establishes the ENZI identity and its Hendon location."
+        },
+        {
+          "title": "Explore the occasion",
+          "text": "Dining, experiences and celebrations help guests understand the different reasons to visit."
+        },
+        {
+          "title": "Prepare for launch",
+          "text": "The reservation experience is developed in preview while live booking stays gated."
+        }
+      ],
+      "outcome": "A deployed, responsive website preview supporting ENZI’s pre-opening presentation. This case study describes the website work, not an operational restaurant booking launch.",
+      "decision": "Pre-opening storytelling must distinguish the venue vision from an open service. Design-concept imagery is identified and booking activation remains a separate operational step.",
+      "evidenceDate": "2026-09-16",
+      "featuredOrder": 10,
       "technologies": []
     }
   }

@@ -84,7 +84,7 @@ export default async function Project({
                 rel="noopener noreferrer"
               >
                 Visit{" "}
-                {p.status === "Delivered" && p.slug === "wazobia-old-kent-road"
+                {p.status === "Delivered" && p.primaryUrl.includes(".vercel.app")
                   ? "the preview"
                   : "the website"}{" "}
                 <ArrowUpRight size={17} />

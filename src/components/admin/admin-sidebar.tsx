@@ -18,6 +18,7 @@ import {
   Users,
   FileCode,
 } from "lucide-react";
+import { Logo } from "@/components/ui/logo";
 import { cn } from "@/lib/utils";
 
 const navItems = [
@@ -37,7 +38,7 @@ const navItems = [
 
 export function AdminSidebar() {
   const pathname = usePathname();
-  const [collapsed, setCollapsed] = useState(false);
+  const collapsed = false;
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const isActive = (href: string) => {
@@ -49,9 +50,7 @@ export function AdminSidebar() {
     <div className="flex flex-col h-full">
       {/* Brand */}
       <div className="flex items-center gap-3 px-5 py-6 border-b border-white/10">
-        <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-sm text-white">
-          K
-        </div>
+        <Logo variant="icon" />
         {!collapsed && (
           <span className="font-semibold text-white tracking-tight">
             Kliqnet Admin
@@ -99,6 +98,8 @@ export function AdminSidebar() {
     <>
       {/* Mobile toggle */}
       <button
+        aria-label={mobileOpen ? "Close admin navigation" : "Open admin navigation"}
+        aria-expanded={mobileOpen}
         onClick={() => setMobileOpen(!mobileOpen)}
         className="fixed top-4 left-4 z-50 lg:hidden bg-white/10 backdrop-blur-sm text-white p-2 rounded-lg border border-white/10"
       >
