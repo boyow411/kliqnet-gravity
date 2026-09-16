@@ -8,15 +8,24 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { pageMetadata } from "@/lib/page-metadata";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kliqnet Digital | Websites, Products & Business Systems",
-  description:
-    "Independent digital agency and product studio. Websites, SaaS and automation, built by people who understand what it takes to run them.",
-  metadataBase: new URL("https://www.kliqnetdigital.com"),
-  openGraph: { type: "website", siteName: "Kliqnet Digital", locale: "en_GB" },
+  ...pageMetadata({ path: "/" }),
+  metadataBase: new URL(site.url),
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: [
+      { url: "/icons/kliqnet-20260916.ico", sizes: "16x16 32x32 48x48", type: "image/x-icon" },
+      { url: "/icons/kliqnet-32-20260916.png", sizes: "32x32", type: "image/png" },
+      { url: "/icons/kliqnet-48-20260916.png", sizes: "48x48", type: "image/png" },
+      { url: "/icons/kliqnet-20260916.svg", sizes: "any", type: "image/svg+xml" },
+    ],
+    shortcut: "/icons/kliqnet-20260916.ico",
+    apple: [{ url: "/icons/kliqnet-180-20260916.png", sizes: "180x180", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({

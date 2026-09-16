@@ -1,3 +1,4 @@
+import { pageMetadata, contentShareImage } from "@/lib/page-metadata";
 import { JsonLd } from "@/components/json-ld";
 import { site } from "@/lib/site";
 import { notFound } from "next/navigation";
@@ -17,16 +18,14 @@ export async function generateMetadata({
   const { slug } = await params;
   const p = await getPublicProject(slug);
   if (!p) return { title: "Project not found" };
-  return {
-    title: p.name + " — Case Study | Kliqnet Digital",
+  const path = "/projects/" + p.slug;
+  return pageMetadata({
+    title: p.name + " — Built by Kliqnet",
     description: p.shortDescription,
-    alternates: { canonical: "/projects/" + p.slug },
-    openGraph: {
-      title: p.name + " — Built by Kliqnet",
-      description: p.shortDescription,
-      images: [p.data.coverImage],
-    },
-  };
+    path,
+    image: contentShareImage(path, p.name, p.data.coverImage),
+    imageAlt: p.name + " — a Kliqnet Digital project",
+  });
 }
 export default async function Project({
   params,

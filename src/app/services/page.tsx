@@ -1,15 +1,16 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import {
   ServicesSection,
   ProcessSection,
   FAQSection,
   ContactBand,
 } from "@/components/marketing";
-export const metadata = {
-  alternates: { canonical: "/services" },
+export const metadata = pageMetadata({
+  path: "/services",
   title: "Services | Kliqnet Digital",
   description:
     "Website design, SaaS development and practical automation. Start with a clear scope around your business.",
-};
+});
 export default function Services() {
   return (
     <div className="agency page-top">

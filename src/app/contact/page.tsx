@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { MultiStepForm } from "@/components/forms/multi-step-form";
 import { site } from "@/lib/site";
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Start a Project | Kliqnet Digital",
   description:
     "Tell Kliqnet what you want to build or improve. Start a conversation about your website, software or operations.",
-  alternates: { canonical: "/contact" },
-};
+  path: "/contact",
+});
 export default async function Contact({
   searchParams,
 }: {

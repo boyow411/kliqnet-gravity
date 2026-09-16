@@ -1,3 +1,4 @@
+import { pageMetadata, contentShareImage } from "@/lib/page-metadata";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound, permanentRedirect } from "next/navigation";
@@ -16,19 +17,16 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const p = await getBlogPost(slug);
-  return p
-    ? {
-        title: p.title + " | Kliqnet Digital",
-        description: p.excerpt,
-        alternates: { canonical: "/blog/" + p.slug },
-        openGraph: {
-          title: p.title,
-          description: p.excerpt,
-          images: [p.coverImage],
-          type: "article",
-        },
-      }
-    : {};
+  if (!p) return {};
+  const path = "/blog/" + p.slug;
+  return pageMetadata({
+    title: p.title + " | Kliqnet Digital",
+    description: p.excerpt,
+    path,
+    image: contentShareImage(path, p.title, p.coverImage),
+    imageAlt: p.title + " — Kliqnet studio notes",
+    type: "article",
+  });
 }
 export default async function Post({
   params,

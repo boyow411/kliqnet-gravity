@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getServiceLandingData } from "@/lib/service-landing-data";
@@ -17,11 +18,11 @@ export async function generateMetadata({
   const { service } = await params;
   const s = getServiceLandingData(service);
   return s
-    ? {
+    ? pageMetadata({
         title: s.title + " | Kliqnet Digital",
         description: s.subheadline,
-        alternates: { canonical: "/" + service },
-      }
+        path: "/" + service,
+      })
     : {};
 }
 export default async function ServicePage({

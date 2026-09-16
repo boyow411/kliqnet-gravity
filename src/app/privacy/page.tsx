@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 import { site } from "@/lib/site";
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Privacy | Kliqnet Digital",
   description:
     "How Kliqnet Digital handles website enquiries and essential service data.",
-  alternates: { canonical: "/privacy" },
-};
+  path: "/privacy",
+});
 export default function PrivacyPage() {
   return (
     <article className="agency container legal-copy section">

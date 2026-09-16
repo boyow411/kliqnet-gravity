@@ -66,11 +66,11 @@ for (const [name, svg] of Object.entries(variants)) {
     .png()
     .toFile(`public/brand/${name}.png`);
 }
-await fs.writeFile("src/app/icon.svg", variants.avatar + "\n");
+await fs.writeFile("public/icon.svg", variants.avatar + "\n");
 await sharp(Buffer.from(variants.avatar))
   .resize(180, 180)
   .png()
-  .toFile("src/app/apple-icon.png");
+  .toFile("public/apple-icon.png");
 const png32 = await sharp(Buffer.from(variants.avatar))
   .resize(32, 32)
   .png()
@@ -87,11 +87,12 @@ header.writeUInt32LE(22, 18);
 await fs.writeFile("src/app/favicon.ico", Buffer.concat([header, png32]));
 const logo = Buffer.from(variants["logo-on-dark"]).toString("base64");
 const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630"><rect width="1200" height="630" fill="#0c1017"/><image href="data:image/svg+xml;base64,${logo}" x="64" y="54" width="294" height="81"/><text x="64" y="250" font-family="Arial,sans-serif" font-size="19" letter-spacing="4" fill="#a7b2c8">INDEPENDENT AGENCY &amp; PRODUCT STUDIO</text><text x="60" y="343" font-family="Arial,sans-serif" font-weight="bold" font-size="73" letter-spacing="-3" fill="white">We build the digital</text><text x="60" y="428" font-family="Arial,sans-serif" font-weight="bold" font-size="73" letter-spacing="-3" fill="#a99dff">side of your business.</text><path d="M64 499H1136" stroke="#303849"/><text x="64" y="554" font-family="Arial,sans-serif" font-size="24" fill="#bac4d8">Websites · Digital products · Business systems</text><text x="900" y="554" font-family="Arial,sans-serif" font-size="18" fill="#bac4d8">kliqnetdigital.com</text></svg>`;
-await sharp(Buffer.from(og)).png().toFile("src/app/opengraph-image.png");
+await sharp(Buffer.from(og)).png().toFile("public/opengraph-image.png");
 await fs.writeFile(
-  "src/app/opengraph-image.alt.txt",
+  "public/opengraph-image.alt.txt",
   "Kliqnet Digital — We build the digital side of your business. Websites, digital products and business systems.\n",
 );
 console.log(
   "Exported 7 SVG/PNG brand variants, browser/mobile icons and social sharing card.",
 );
+await import("./export-sharing.mjs");

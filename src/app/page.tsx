@@ -1,3 +1,4 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { JourneyHero } from "@/components/cinematic/JourneyHero";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
@@ -11,7 +12,7 @@ import {
   FAQSection,
   ContactBand,
 } from "@/components/marketing";
-export const metadata = { alternates: { canonical: "/" } };
+export const metadata = pageMetadata({ path: "/" });
 export const dynamic = "force-dynamic";
 export default async function Home() {
   const projects = await getPublicProjects();

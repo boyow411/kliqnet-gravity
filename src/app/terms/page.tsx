@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 import { site } from "@/lib/site";
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Website terms | Kliqnet Digital",
   description:
     "Website use, project enquiries and the scope of portfolio examples.",
-  alternates: { canonical: "/terms" },
-};
+  path: "/terms",
+});
 export default function TermsPage() {
   return (
     <article className="agency container legal-copy section">

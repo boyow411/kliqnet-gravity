@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import {
   FounderSection,
   ProcessSection,
   ContactBand,
 } from "@/components/marketing";
-export const metadata = {
-  alternates: { canonical: "/about" },
+export const metadata = pageMetadata({
+  path: "/about",
   title: "About Kliqnet Digital",
   description:
     "Meet Francis Makanju and the operator-led agency behind Kliqnet’s websites, products and business systems.",
-};
+});
 export default function About() {
   return (
     <div className="agency page-top">

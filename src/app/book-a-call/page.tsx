@@ -1,11 +1,12 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { MultiStepForm } from "@/components/forms/multi-step-form";
 import { site } from "@/lib/site";
-export const metadata = {
-  alternates: { canonical: "/book-a-call" },
+export const metadata = pageMetadata({
+  path: "/book-a-call",
   title: "Request a Strategy Call | Kliqnet Digital",
   description:
     "Request an introductory conversation about your next website, product or operational system.",
-};
+});
 export default function BookCall() {
   const raw = process.env.STRATEGY_CALL_URL;
   let booking = "";

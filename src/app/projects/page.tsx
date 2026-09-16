@@ -1,15 +1,16 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import { ProjectPremiere } from "@/components/cinematic/ProjectPremiere";
 import { getPublicProjects } from "@/lib/portfolio";
 import { PortfolioExplorer } from "@/components/projects/PortfolioExplorer";
 import { ContactBand } from "@/components/marketing";
 import { showcaseProjects } from "@/lib/portfolio-presentation";
 export const dynamic = "force-dynamic";
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Our Work & Products | Kliqnet Digital",
   description:
     "Explore Kliqnet’s websites, software products and operational systems across healthcare, hospitality, business and creative production.",
-  alternates: { canonical: "/projects" },
-};
+  path: "/projects",
+});
 export default async function Projects() {
   const projects = await getPublicProjects();
   return (

@@ -1,0 +1,140 @@
+[
+  {
+    "path": "/projects/paytrack",
+    "title": "PayTrack",
+    "cover": "/projects/paytrack/paytrack.jpg",
+    "image": "/share/projects-paytrack-811db329fe.png"
+  },
+  {
+    "path": "/projects/tracct",
+    "title": "Tracct",
+    "cover": "/projects/tracct/tracct1.jpg",
+    "image": "/share/projects-tracct-d986b4f645.png"
+  },
+  {
+    "path": "/projects/veediogram",
+    "title": "Veediogram",
+    "cover": "/projects/veediogram/veediogram1.jpg",
+    "image": "/share/projects-veediogram-5924a61701.png"
+  },
+  {
+    "path": "/projects/mailvara",
+    "title": "Mailvara",
+    "cover": "/projects/mailvara/Mailvara.jpg",
+    "image": "/share/projects-mailvara-4c384d8a3c.png"
+  },
+  {
+    "path": "/projects/cuereq",
+    "title": "CueReq",
+    "cover": "/projects/cuereq/cuereq1.jpg",
+    "image": "/share/projects-cuereq-b2d76e0fbb.png"
+  },
+  {
+    "path": "/projects/monika-restaurant",
+    "title": "Monika Restaurant",
+    "cover": "/projects/monika/monika1.jpg",
+    "image": "/share/projects-monika-restaurant-2d3abeef41.png"
+  },
+  {
+    "path": "/projects/shnc",
+    "title": "Safehands Nursing Care",
+    "cover": "/projects/shnc/current-home.webp",
+    "image": "/share/projects-shnc-fd15141f71.png"
+  },
+  {
+    "path": "/projects/esq",
+    "title": "ESQ Resto Lounge",
+    "cover": "/projects/esq/current-home.webp",
+    "image": "/share/projects-esq-fb2aea8fae.png"
+  },
+  {
+    "path": "/projects/aidesk",
+    "title": "AIDesk",
+    "cover": "/projects/AIDesk/aidesk.jpg",
+    "image": "/share/projects-aidesk-8c828a993b.png"
+  },
+  {
+    "path": "/projects/veralley",
+    "title": "Veralley",
+    "cover": "/projects/Veralley/veralley.jpg",
+    "image": "/share/projects-veralley-43174468e6.png"
+  },
+  {
+    "path": "/projects/signoff360",
+    "title": "Signoff360",
+    "cover": "/projects/Signoff360/current-home.webp",
+    "image": "/share/projects-signoff360-e9b7ffdbb5.png"
+  },
+  {
+    "path": "/projects/cinekliq",
+    "title": "CineKliq",
+    "cover": "/projects/cinekliq/storyboard.webp",
+    "image": "/share/projects-cinekliq-1c4fb7c7b0.png"
+  },
+  {
+    "path": "/projects/kliqpos",
+    "title": "KliqPOS",
+    "cover": "/projects/kliqpos/website.webp",
+    "image": "/share/projects-kliqpos-6e8a2ca422.png"
+  },
+  {
+    "path": "/projects/rotdule",
+    "title": "ROTDULE",
+    "cover": "/projects/rotdule/website.webp",
+    "image": "/share/projects-rotdule-9239db8c8a.png"
+  },
+  {
+    "path": "/projects/skeduda",
+    "title": "Skeduda",
+    "cover": "/projects/skeduda/website.webp",
+    "image": "/share/projects-skeduda-e9afef8a3d.png"
+  },
+  {
+    "path": "/projects/wazobia-old-kent-road",
+    "title": "Wazobia · Old Kent Road",
+    "cover": "/projects/wazobia-old-kent-road/website-20260916.webp",
+    "image": "/share/projects-wazobia-old-kent-road-167f75d742.png"
+  },
+  {
+    "path": "/projects/kliqcare",
+    "title": "KliqCare",
+    "cover": "/projects/kliqcare/website.webp",
+    "image": "/share/projects-kliqcare-ce801384a1.png"
+  },
+  {
+    "path": "/projects/crate-companion",
+    "title": "Crate Companion",
+    "cover": "/projects/crate-companion/website-20260916.webp",
+    "image": "/share/projects-crate-companion-a94039b4c5.png"
+  },
+  {
+    "path": "/projects/homeskolar",
+    "title": "Homeskolar",
+    "cover": "/projects/homeskolar/website-20260916.webp",
+    "image": "/share/projects-homeskolar-a8b28c7877.png"
+  },
+  {
+    "path": "/projects/enzi",
+    "title": "ENZI",
+    "cover": "/projects/enzi/website-20260916.webp",
+    "image": "/share/projects-enzi-62c5fea63e.png"
+  },
+  {
+    "path": "/blog/a-restaurant-website-is-a-guest-journey",
+    "title": "A restaurant website is a guest journey",
+    "cover": "/projects/esq/current-home.webp",
+    "image": "/share/blog-a-restaurant-website-is-a-guest-journey-6696b55e31.png"
+  },
+  {
+    "path": "/blog/from-ai-generation-to-creative-workflow",
+    "title": "The useful part of AI is the workflow around it",
+    "cover": "/projects/cinekliq/storyboard.webp",
+    "image": "/share/blog-from-ai-generation-to-creative-workflow-95c1647fa0.png"
+  },
+  {
+    "path": "/blog/build-the-operating-workflow-first",
+    "title": "Before adding features, connect the operating workflow",
+    "cover": "/projects/rotdule/website.webp",
+    "image": "/share/blog-build-the-operating-workflow-first-46d64963a3.png"
+  }
+]

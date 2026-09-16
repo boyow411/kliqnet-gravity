@@ -1,14 +1,15 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import Link from "next/link";
 import Image from "next/image";
 import { getPublicPosts } from "@/lib/blog-posts";
 import { ContactBand } from "@/components/marketing";
 export const dynamic = "force-dynamic";
-export const metadata = {
+export const metadata = pageMetadata({
   title: "Studio notes | Kliqnet Digital",
   description:
     "Practical lessons from building websites, creative tools and business systems.",
-  alternates: { canonical: "/blog" },
-};
+  path: "/blog",
+});
 export default async function Insights() {
   const posts = await getPublicPosts();
   return (

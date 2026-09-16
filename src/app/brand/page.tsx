@@ -1,12 +1,13 @@
+import { pageMetadata } from "@/lib/page-metadata";
 import type { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Brand assets | Kliqnet Digital",
   description:
     "The Kliqnet Digital identity: approved logos, symbols and usage guidance.",
-  alternates: { canonical: "/brand" },
-};
+  path: "/brand",
+});
 const assets = [
   { file: "logo", title: "Primary logo", dark: false, square: false },
   {
