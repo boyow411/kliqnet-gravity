@@ -6,8 +6,8 @@ import vm from 'node:vm';
 // Missing cinematic styles otherwise leave a full-size native video above the copy.
 const buildDir = path.resolve(process.argv[2] || '.next');
 const routes = [
-  ['page', '/page', ['.journey-stage', '.journey-film', '.journey-copy', '.journey-chapters', '.journey-quiet']],
-  ['projects/page', '/projects/page', ['.project-premiere', '.premiere-controls', '.cinema-card']],
+  ['page', '/page', ['.journey-stage', '.journey-film', '.journey-copy', '.journey-chapters', '.journey-quiet', '.selected-work-section', '.premiere-reel']],
+  ['projects/page', '/projects/page', ['.project-premiere', '.premiere-controls', '.premiere-reel', '.cinema-card', '.work-poster-screen', '.case-opening']],
 ];
 
 for (const [file, route, selectors] of routes) {

@@ -69,11 +69,14 @@ export function PortfolioExplorer({
           </select>
         </div>
       </div>
-      <p className="results-count" role="status">
+      <div className="collection-summary"><p className="results-count" role="status">
         {filtered.length} {filtered.length === 1 ? "project" : "projects"}
+        {filtered.length !== projects.length ? ` of ${projects.length}` : " in the collection"}
         {kind !== "All work" ? " · " + kind : ""}
         {sector !== "All sectors" ? " · " + sector : ""}
       </p>
+      {(kind !== "All work" || sector !== "All sectors" || query) && <button onClick={() => { setQuery(""); setKind("All work"); setSector("All sectors"); }}>Reset filters</button>}
+      </div>
       {filtered.length ? (
         <div className="work-grid cinema-grid">
           {filtered.map((p, i) => (

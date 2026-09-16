@@ -60,13 +60,13 @@ export default async function Project({
           <ArrowLeft size={16} />
           All work & products
         </Link>
-        <div className="project-head">
+        <div className="case-opening"><div className="project-head">
           <div className="project-facts">
             <span>{d.sector}</span>
             <span className="status-dot">{p.status}</span>
           </div>
           <h1>{p.name}</h1>
-          <p>{p.tagline}</p>
+          <p>{p.shortDescription}</p>
           <div className="project-facts">
             <span>{d.relationship}</span>
           </div>
@@ -94,7 +94,7 @@ export default async function Project({
             )}
           </div>
         </div>
-        <div className="case-cover">
+        <figure className="case-preview"><div className="case-cover">
           <Image
             src={d.coverImage}
             alt={d.coverCaption}
@@ -104,7 +104,7 @@ export default async function Project({
             className="object-contain"
           />
         </div>
-        <p className="case-caption">{d.coverCaption}</p>
+        <figcaption className="case-caption">{d.coverCaption}</figcaption></figure></div>
         <div className="story-grid">
           <nav className="story-nav" aria-label="Case study sections">
             <a href="#challenge">The challenge</a>
