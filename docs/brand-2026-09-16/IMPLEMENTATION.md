@@ -28,3 +28,13 @@ Provider references:
 Mailbox login is separate from hPanel. The owner authorised a test to `biyim@kliqnetdigital.com` (the same mailbox, not an external provider). At this point the login is pending. Do not describe an actual test delivery as verified without receipt/log evidence.
 
 Website enquiries remain persisted in the admin inbox. No SMTP or transactional-mail provider credentials are configured in this Vercel project, so automated enquiry emails are not enabled or promised. Existing database, anti-abuse and idempotency handling remain unchanged.
+
+## Final verification
+
+The local production build, TypeScript, security regression and agency content checks pass. Lint reports zero errors and 15 existing warnings outside this change. `npm audit --omit=dev --audit-level=moderate` reports zero vulnerabilities. Mobile testing at 390px verified the logo, navigation, portfolio search and case study without horizontal overflow. Both GitHub validation runs passed for application commit `d30d39fc49e1795bf967e0cdf6491e652a0c4bc3`.
+
+Vercel preview `dpl_6VEBKj7UUpqteM3pMUcKMFPQRoK1` is READY and identifies that same application commit. Browser checks confirmed the deployed homepage, new SVG logo, icon metadata, sharing-image metadata and brand download page. Preview: https://kliqnet-gravity-mtzcwhs93-francis-maksons-projects.vercel.app . The production domain remains on `dpl_BueGGozSmiBzpXbe7vztWpXbzxX7`.
+
+Delivery-log investigation found historical `550 5.1.1 User doesn't exist` rejections for contact@ despite its listed alias. Direct SMTP recipient checks subsequently confirmed contact@ accepted by both MX servers. The new hello@ alias initially showed mixed acceptance during provider propagation. A later check returned `250 2.1.5 Ok` for **biyim@, contact@ and hello@ on both mx1.hostinger.com and mx2.hostinger.com**. These checks issued EHLO/MAIL/RCPT/RSET only; no DATA or email message was transmitted. This confirms current recipient acceptance, not final inbox placement or outbound delivery. The authorised self-test remains pending webmail login.
+
+Private Hostinger screenshots and recipient-check evidence are stored in the task workspace under `email-verification-2026-09-16/`, outside the repository. No message bodies or third-party sender details are committed.
